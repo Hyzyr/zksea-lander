@@ -158,6 +158,24 @@
     position: relative;
     z-index: 0;
     padding: 60px 60px 120px 60px;
+    min-height: 535px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &-header {
+      padding: 20px 0;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    &-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 10px 0;
+    }
 
     &-frame {
       position: absolute;
@@ -171,6 +189,21 @@
         width: 100%;
         height: 100%;
       }
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    &-item {
+      position: relative;
+      padding-left: 1.6em;
+
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.5;
     }
   }
 }

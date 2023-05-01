@@ -18,11 +18,14 @@ h4 {
 }
 p {
   font-size: 18px;
-  &_.sm {
+  &._sm {
     font-size: 16px;
   }
-  &_.lg {
+  &._lg {
     font-size: 20px;
+  }
+  &._xlg {
+    font-size: 24px;
   }
 }
 
