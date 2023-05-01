@@ -1,0 +1,25 @@
+@font-face {
+font-family: 'fonticon';
+src: url("../fonts/fonticon.ttf") format("truetype"),
+url("../fonts/fonticon.eot") format("embedded-opentype"),
+url("../fonts/fonticon.woff") format("woff");
+}
+.ico {
+    font-family: 'fonticon' !important;
+    font-size: 18px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.twitter:before { content: "\ea01"; }
+.telegram:before { content: "\ea02"; }
+.youTube:before { content: "\ea03"; }
+.Vector:before { content: "\ea04"; }
+.listArrow:before { content: "\ea05"; }
+.ArrowRightGradient:before { content: "\ea06"; }
+.arrowRightPrimary:before { content: "\ea07"; }
+.arrowRight:before { content: "\ea08"; }
+.arrowRightBottom:before { content: "\ea09"; }
+.caption:before { content: "\ea0a"; }
+.ghithubBook:before { content: "\ea0b"; }
