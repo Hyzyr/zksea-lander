@@ -13,13 +13,12 @@ url("../fonts/fonticon.woff") format("woff");
 }
 
 .twitter:before { content: "\ea01"; }
-.telegram:before { content: "\ea02"; }
-.youTube:before { content: "\ea03"; }
-.Vector:before { content: "\ea04"; }
-.listArrow:before { content: "\ea05"; }
-.ArrowRightGradient:before { content: "\ea06"; }
-.arrowRightPrimary:before { content: "\ea07"; }
-.arrowRight:before { content: "\ea08"; }
-.arrowRightBottom:before { content: "\ea09"; }
-.caption:before { content: "\ea0a"; }
-.ghithubBook:before { content: "\ea0b"; }
+.gitbokk:before { content: "\ea02"; }
+.telegram:before { content: "\ea03"; }
+.arrow-right:before { content: "\ea04"; }
+.arrow-right-long:before { content: "\ea05"; }
+.substract:before { content: "\ea06"; }
+.Vector:before { content: "\ea07"; }
+.arrow-right-primary:before { content: "\ea08"; }
+.icons:before { content: "\ea09"; }
+.arrow-bottom:before { content: "\ea0a"; }
