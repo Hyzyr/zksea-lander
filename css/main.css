@@ -157,7 +157,7 @@ h2 {
 }
 
 h3 {
-  font-size: 35px;
+  font-size: 34px;
   font-weight: 700;
 }
 
@@ -169,11 +169,14 @@ h4 {
 p {
   font-size: 18px;
 }
-p_.sm {
+p._sm {
   font-size: 16px;
 }
-p_.lg {
+p._lg {
   font-size: 20px;
+}
+p._xlg {
+  font-size: 24px;
 }
 
 .text--primary {
@@ -1425,6 +1428,99 @@ svg {
 }
 .benefits__item-footer .button {
   min-width: 175px;
+}
+
+.introduction {
+  position: relative;
+  padding: 80px 0;
+}
+.introduction .autoContainer {
+  max-width: 1220px;
+}
+.introduction__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.introduction__bg span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.introduction__bg .blur {
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 200px 50px;
+          box-shadow: 0 0 200px 50px;
+}
+.introduction__bg .blur:nth-child(1) {
+  left: calc(50% - 600px);
+  -webkit-box-shadow: 0 0 500px 100px #39ff93;
+          box-shadow: 0 0 500px 100px #39ff93;
+}
+.introduction__inner {
+  position: relative;
+  z-index: 0;
+  padding: 60px 60px 120px 60px;
+  min-height: 535px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.introduction__inner-header {
+  padding: 20px 0;
+  text-align: center;
+}
+.introduction__inner p {
+  text-align: center;
+}
+.introduction__inner-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  padding: 10px 0;
+}
+.introduction__inner-frame {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.introduction__inner-frame img {
+  width: 100%;
+  height: 100%;
+}
+.introduction__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+.introduction__list-item {
+  position: relative;
+  padding-left: 1.6em;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 @media (max-width: 1160px) {
