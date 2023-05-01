@@ -53,13 +53,12 @@ body {
   cursor: default;
   font-family: $font-secondary, sans-serif;
   font-size: 14px;
-  color: $black;
-  line-height: 1.7em;
+  color: $white;
+  line-height: 1.2;
   font-weight: 400;
-  background: $white;
+  background: $black-bg;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
-  background: $white;
 }
 body.active {
   overflow: hidden;
