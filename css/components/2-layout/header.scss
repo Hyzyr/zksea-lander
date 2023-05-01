@@ -19,13 +19,14 @@
     .burger {
       display: none;
     }
-
   }
 
   &.sticky {
     position: fixed;
     padding: 20px 0;
     border-bottom: 1px solid rgba($secondary, 0.4);
+    background: rgba($black, 0.57);
+    backdrop-filter: blur(5px);
     animation: 0.3s sticky ease-in;
     transition-duration: 0.5s;
   }
