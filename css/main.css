@@ -624,26 +624,6 @@ svg {
   border-radius: 80px;
   position: relative;
 }
-<<<<<<< HEAD
-.button--border .button__ico {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 14px;
-  height: 16px;
-}
-.button--border .button__ico img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-=======
 .button--border span {
   background: -webkit-gradient(linear, left top, right top, color-stop(25%, #baff00), color-stop(75%, #06ffcc));
   background: linear-gradient(90deg, #baff00 25%, #06ffcc 75%);
@@ -651,7 +631,6 @@ svg {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
->>>>>>> 1f86f23a3f2a1b86fcefa550f84a2c37676fe0ed
 }
 .button--border > span {
   background: -webkit-gradient(linear, left top, right top, color-stop(25%, #baff00), color-stop(75%, #06ffcc));
@@ -683,7 +662,7 @@ svg {
   position: absolute;
   top: 0;
   left: 0;
-  background: #1e1e1e;
+  background: #19141D;
   z-index: -1;
   border-radius: inherit;
   -webkit-transition: all 0.2s ease-in-out 0s;
@@ -1382,188 +1361,6 @@ svg {
   transition: 0.2s ease;
 }
 
-<<<<<<< HEAD
-.products {
-  padding: 80px 0;
-}
-.products__inner {
-  max-width: 1240px;
-  margin: 0 auto;
-}
-.products__inner-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 30px;
-}
-.products__inner h2 {
-  text-align: left;
-  margin-bottom: 54px;
-}
-.productsItem {
-  background: #050406;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 22px 25px;
-  border-radius: 8px;
-}
-.productsItem__image {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.productsItem__image .ratioImage {
-  padding-bottom: 60%;
-}
-.productsItem__image .ratioImage img {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.productsItem__content {
-  width: calc(50% - 20px);
-  max-width: 550px;
-  position: relative;
-  padding-top: 20px;
-  z-index: 1;
-}
-.productsItem__content-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 18px;
-}
-.productsItem__content-info {
-  margin-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 10px;
-}
-.productsItem p {
-  line-height: 27px;
-  text-transform: capitalize;
-}
-.productsItem p span {
-  width: 9px;
-  height: 10px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 4px;
-}
-.productsItem p span img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.productsItem ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 16px;
-}
-.productsItem li {
-  font-size: 16px;
-  line-height: 24px;
-  position: relative;
-  padding-left: 25px;
-  text-transform: capitalize;
-}
-.productsItem li::before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: #fff;
-  position: absolute;
-  top: 8px;
-  left: 12px;
-}
-.productsItem li a {
-  color: #acf10e;
-  text-decoration: underline;
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s;
-  -moz-transition: all 0.2s ease-in-out 0s;
-}
-.productsItem li a:hover {
-  opacity: 0.8;
-}
-.productsItem li.arrow:before {
-  content: "";
-  width: 9px;
-  height: 16px;
-  border-radius: 50%;
-  background-image: url("../images/font-icon/svg/arrowRight.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  top: 8px;
-  left: 12px;
-}
-.productsItem .button {
-  padding: 0.7em 2.8em;
-}
-.productsItem .button--border {
-  padding: 0.7em 1.2em 0.7em 1.4em;
-}
-.productsItem .button--border:after {
-  background: #050406;
-}
-.productsItem .button--ico {
-  width: 14px;
-  height: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 10px;
-}
-.productsItem .button--ico img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-=======
->>>>>>> 1f86f23a3f2a1b86fcefa550f84a2c37676fe0ed
 .bg {
   position: relative;
 }
@@ -2231,9 +2028,6 @@ svg {
             flex-direction: column;
     gap: 1em;
   }
-<<<<<<< HEAD
-=======
-
   .introduction__bg .blur:nth-child(1) {
     left: 100%;
   }
@@ -2242,37 +2036,15 @@ svg {
   }
 }
 @media (max-width: 1280px) {
->>>>>>> 1f86f23a3f2a1b86fcefa550f84a2c37676fe0ed
   h1 {
     font-size: 65px;
   }
   h2 {
     font-size: 50px;
   }
-<<<<<<< HEAD
-  h3 {
-    font-size: 30px;
-  }
-  h4 {
-    font-size: 25px;
-  }
-  p {
-    font-size: 16px;
-  }
-  p._sm {
-    font-size: 14px;
-  }
-  p._lg {
-    font-size: 18px;
-  }
-  p._xlg {
-    font-size: 22px;
-  }
-=======
   h2._lg {
     font-size: 75px;
   }
-
   .introduction__inner {
     padding: 60px 50px 150px 50px;
   }
@@ -2282,11 +2054,9 @@ svg {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
   .productsItem__content {
     padding-top: 10px;
   }
-
   .roadmap__inner-item {
     width: calc(33.3% - 10px);
   }
@@ -2295,36 +2065,30 @@ svg {
   .autoContainer {
     padding: 0 40px;
   }
-
   .header__inner .logo {
     width: 140px;
   }
   .header + section {
     margin-top: 120px;
   }
-
   h1 {
     font-size: 60px;
   }
-
   h2 {
     font-size: 45px;
   }
   h2._lg {
     font-size: 70px;
   }
-
   .benefits {
     padding: 70px 0;
   }
   .benefits__item {
     width: calc(50% - 10px);
   }
-
   .products {
     padding: 70px 0;
   }
->>>>>>> 1f86f23a3f2a1b86fcefa550f84a2c37676fe0ed
   .products__inner h2 {
     margin-bottom: 45px;
   }
@@ -2339,7 +2103,6 @@ svg {
   .productsItem p {
     line-height: 24px;
   }
-
   .tokenomics {
     padding: 70px 0;
   }
@@ -2350,7 +2113,6 @@ svg {
     font-size: 15px;
     padding: 1.5em;
   }
-
   .roadmap {
     padding: 70px 0;
   }
@@ -2365,7 +2127,6 @@ svg {
   .roadmap__inner-item {
     width: calc(50% - 20px);
   }
-
   .footer {
     padding: 100px 0;
   }
@@ -2391,13 +2152,9 @@ svg {
     display: block;
     z-index: 2;
   }
-<<<<<<< HEAD
-=======
   .header + section {
     margin-top: 100px;
   }
-
->>>>>>> 1f86f23a3f2a1b86fcefa550f84a2c37676fe0ed
   .nav {
     position: fixed;
     top: 81px;
@@ -2505,17 +2262,12 @@ svg {
     -webkit-transform: translate(0);
             transform: translate(0);
   }
-<<<<<<< HEAD
-=======
-
   .hero__inner-list {
     font-size: 28px;
   }
-
   .products {
     padding: 60px 0 70px;
   }
->>>>>>> 1f86f23a3f2a1b86fcefa550f84a2c37676fe0ed
   .products__inner h2 {
     margin-bottom: 35px;
   }
@@ -2528,7 +2280,6 @@ svg {
   .productsItem ul {
     gap: 10px;
   }
-
   .tokenomics {
     padding: 60px 0;
   }
@@ -2550,34 +2301,27 @@ svg {
     max-width: 700px;
     margin: 0 auto;
   }
-
   .benefits {
     padding: 70px 0 60px;
   }
-
   .introduction {
     padding: 60px 0;
   }
-
   .roadmap {
     padding: 60px 0;
   }
-
   h1 {
     font-size: 55px;
   }
-
   h2 {
     font-size: 40px;
   }
   h2._lg {
     font-size: 65px;
   }
-
   h3 {
     font-size: 32px;
   }
-
   .footer {
     padding: 80px 0;
   }
@@ -2586,24 +2330,18 @@ svg {
   .autoContainer {
     padding: 0 25px;
   }
-<<<<<<< HEAD
-=======
-
   h1 {
     font-size: 50px;
   }
-
   h2 {
     font-size: 37px;
   }
   h2._lg {
     font-size: 55px;
   }
-
   .hero__inner-list {
     font-size: 26px;
   }
-
   .benefits__inner {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2614,8 +2352,6 @@ svg {
     max-width: 850px;
     margin: 0 auto;
   }
-
->>>>>>> 1f86f23a3f2a1b86fcefa550f84a2c37676fe0ed
   .products__inner {
     width: 100%;
     max-width: 850px;
@@ -2635,11 +2371,8 @@ svg {
   .productsItem__content {
     width: 100%;
   }
-<<<<<<< HEAD
-=======
 }
 @media (max-width: 840px) {
->>>>>>> 1f86f23a3f2a1b86fcefa550f84a2c37676fe0ed
   h1 {
     font-size: 45px;
   }
@@ -2649,14 +2382,6 @@ svg {
   h2._lg {
     font-size: 50px;
   }
-<<<<<<< HEAD
-  h3 {
-    font-size: 27px;
-  }
-  h4 {
-    font-size: 23px;
-=======
-
   p {
     font-size: 14px;
   }
@@ -2669,39 +2394,32 @@ svg {
   p._xlg {
     font-size: 20px;
   }
-
   .introduction__inner {
     padding: 60px 40px 150px 40px;
   }
   .introduction__list-item {
     font-size: 16px;
->>>>>>> 1f86f23a3f2a1b86fcefa550f84a2c37676fe0ed
   }
 }
 @media (max-width: 768px) {
   .autoContainer {
     padding: 0 15px;
   }
-
   h1 {
     font-size: 40px;
   }
-
   h2 {
     font-size: 32px;
   }
   h2._lg {
     font-size: 45px;
   }
-
   .hero__inner-list {
     font-size: 24px;
   }
-
   .introduction__inner {
     padding: 60px 30px 150px 30px;
   }
-
   .roadmap__inner-row {
     gap: 30px;
   }
@@ -2709,7 +2427,6 @@ svg {
     width: 100%;
     max-width: 500px;
   }
-
   .footer__inner {
     gap: 20px;
   }
@@ -2718,16 +2435,12 @@ svg {
   body {
     font-size: 12px;
   }
-
   ._hideMob {
     display: none;
   }
   .button {
     font-size: 16px;
   }
-<<<<<<< HEAD
-=======
-
   .header {
     padding: 15px 0;
   }
@@ -2740,7 +2453,6 @@ svg {
   .header + section {
     margin-top: 80px;
   }
-
   .nav {
     top: 68px;
     height: calc(100% - 68px);
@@ -2748,23 +2460,18 @@ svg {
   .nav__inner {
     padding: 40px 20px;
   }
-
   h1 {
     font-size: 35px;
   }
-
   h3 {
     font-size: 30px;
   }
-
   h4 {
     font-size: 25px;
   }
-
   .hero__inner-list {
     font-size: 22px;
   }
-
   .benefits {
     padding: 50px 0 40px;
   }
@@ -2774,11 +2481,9 @@ svg {
   .benefits__item-logo {
     width: 90px;
   }
-
   .products {
     padding: 40px 0 50px;
   }
->>>>>>> 1f86f23a3f2a1b86fcefa550f84a2c37676fe0ed
   .productsItem {
     gap: 20px;
     padding: 15px 20px 30px;
@@ -2801,22 +2506,18 @@ svg {
     height: 4px;
     left: 0;
   }
-
   .tokenomics {
     padding: 40px 0;
   }
   .tokenomics__inner h3 {
     margin-bottom: 0;
   }
-
   .roadmap {
     padding: 40px 0;
   }
-
   .introduction {
     padding: 40px 0;
   }
-
   .footer {
     padding: 60px 0;
   }
@@ -2852,53 +2553,28 @@ svg {
   h4 {
     font-size: 20px;
   }
-<<<<<<< HEAD
-  p {
-    font-size: 14px;
-  }
-  p._sm {
-    font-size: 12px;
-  }
-  p._lg {
-    font-size: 16px;
-  }
-  p._xlg {
-    font-size: 20px;
-  }
-  .button {
-    font-size: 14px;
-  }
-=======
-
   h5 {
     font-size: 20px;
   }
-
   p._xlg {
     font-size: 18px;
   }
-
   .button {
     font-size: 14px;
   }
-
   .hero__inner-list {
     font-size: 20px;
   }
-
   .benefits__item {
     gap: 0.7em;
     padding: 20px;
   }
-
   .introduction__inner {
     padding: 60px 20px 150px 20px;
   }
   .introduction__list-item {
     font-size: 14px;
   }
-
->>>>>>> 1f86f23a3f2a1b86fcefa550f84a2c37676fe0ed
   .products__inner-items {
     gap: 20px;
   }
@@ -2912,7 +2588,6 @@ svg {
   .productsItem p {
     line-height: 20px;
   }
-
   .roadmap__inner h3 {
     margin-bottom: 30px;
   }
@@ -2924,14 +2599,12 @@ svg {
   .hero__inner-list {
     font-size: 16px;
   }
-
   .benefits__item {
     padding: 20px;
   }
   .benefits__item-progress {
     font-size: 14px;
   }
-
   .productsItem__content-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2941,22 +2614,18 @@ svg {
   .productsItem__content .button {
     width: 100%;
   }
-
   h1 {
     font-size: 25px;
   }
-
   h2 {
     font-size: 25px;
   }
   h2._lg {
     font-size: 30px;
   }
-
   h3 {
     font-size: 21px;
   }
-
   p._lg {
     font-size: 14px;
   }
