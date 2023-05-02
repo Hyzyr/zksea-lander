@@ -874,7 +874,8 @@
   }
   .roadmap {
     &__inner {
-      &-row {
+      h3{
+      margin-bottom: 30px;
       }
       &-item {
         ul {
