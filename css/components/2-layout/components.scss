@@ -289,6 +289,9 @@
       border-radius: 80px;
       @include transition;
     }
+    &:active{
+      opacity: 1 !important;
+    }
   }
   &--iconright {
     svg {
