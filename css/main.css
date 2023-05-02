@@ -2612,7 +2612,7 @@ svg {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 20px;
-    max-width: 340px;
+    max-width: 300px;
   }
   .footer__inner .button--square {
     font-size: 13px;
