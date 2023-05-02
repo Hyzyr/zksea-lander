@@ -626,32 +626,14 @@ svg {
 .button--border {
   border-radius: 80px;
   position: relative;
+}
+.button--border span {
   background: -webkit-gradient(linear, left top, right top, color-stop(25%, #baff00), color-stop(75%, #06ffcc));
   background: linear-gradient(90deg, #baff00 25%, #06ffcc 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-}
-.button--border span {
-  width: 14px;
-  height: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 10px;
-}
-.button--border span img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 .button--border:hover:after {
   background: #101010;
@@ -1399,6 +1381,26 @@ svg {
 }
 .productsItem .button--border {
   padding: 0.7em 1.2em 0.7em 1.4em;
+}
+.productsItem .button--ico {
+  width: 14px;
+  height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 10px;
+}
+.productsItem .button--ico img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .hero__inner {

@@ -243,23 +243,13 @@
   &--border {
     border-radius: 80px;
     position: relative;
-    background: $gradient;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
     span {
-      width: 14px;
-      height: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-left: 10px;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
+      background: $gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+     
     }
     &:hover {
       &:after {
