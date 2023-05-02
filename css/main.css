@@ -208,15 +208,32 @@ h2 {
   font-size: 54px;
   font-weight: 700;
 }
+h2._lg {
+  font-size: 80px;
+}
 
 h3 {
   font-size: 34px;
   font-weight: 700;
 }
+h3._lg {
+  font-size: 40px;
+}
 
 h4 {
   font-size: 28px;
   font-weight: 600;
+}
+h4._sm {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+h6 {
+  font-size: 18px;
 }
 
 p {
@@ -1302,6 +1319,7 @@ svg {
 }
 .productsItem p {
   line-height: 27px;
+  text-transform: capitalize;
 }
 .productsItem p span {
   width: 9px;
@@ -1338,6 +1356,7 @@ svg {
   line-height: 24px;
   position: relative;
   padding-left: 25px;
+  text-transform: capitalize;
 }
 .productsItem li::before {
   content: "";
