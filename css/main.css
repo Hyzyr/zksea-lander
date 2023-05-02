@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "./animate.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @-webkit-keyframes zoomInCenter {
@@ -171,31 +172,31 @@
   -moz-osx-font-smoothing: grayscale;
 }
 .icon--right-arrow:before {
-  content: "\e801";
+  content: "";
 }
 .icon--right-arrow2:before {
-  content: "\e802";
+  content: "";
 }
 .icon--telegram:before {
-  content: "\e803";
+  content: "";
 }
 .icon--twitter:before {
-  content: "\e804";
+  content: "";
 }
 .icon--book:before {
-  content: "\e806";
+  content: "";
 }
 .icon--left-arrow:before {
-  content: "\e807";
+  content: "";
 }
 .icon--right:before {
-  content: "\e809";
+  content: "";
 }
 .icon--youtube-play:before {
-  content: "\f16a";
+  content: "";
 }
 .icon--reddit-alien:before {
-  content: "\f281";
+  content: "";
 }
 
 h1 {
@@ -487,11 +488,14 @@ svg {
   border-top: unset;
   -webkit-transition: max-height 0.3s ease, border-color 0s ease 0.3s, opacity 0.1s ease 0.2s;
   transition: max-height 0.3s ease, border-color 0s ease 0.3s, opacity 0.1s ease 0.2s;
-  scrollbar-width: none; /* Firefox 64 */
-  -ms-overflow-style: none; /* Internet Explorer 11 */
+  scrollbar-width: none;
+  /* Firefox 64 */
+  -ms-overflow-style: none;
+  /* Internet Explorer 11 */
   z-index: 1;
 }
-.input--select .input__dropdown::-webkit-scrollbar { /** WebKit */
+.input--select .input__dropdown::-webkit-scrollbar {
+  /** WebKit */
   display: none;
 }
 .input--select .input__dropdown-item {
@@ -1889,7 +1893,7 @@ svg {
 }
 .roadmap__inner-item ul li::before {
   position: absolute;
-  content: "\e802";
+  content: "";
   top: 0.6em;
   left: 0;
   width: 1em;
@@ -1932,18 +1936,23 @@ svg {
   .autoContainer {
     padding: 0 40px;
   }
+
   h1 {
     font-size: 65px;
   }
+
   h2 {
     font-size: 50px;
   }
+
   h3 {
     font-size: 30px;
   }
+
   h4 {
     font-size: 25px;
   }
+
   p {
     font-size: 16px;
   }
@@ -1956,6 +1965,7 @@ svg {
   p._xlg {
     font-size: 22px;
   }
+
   .products__inner h2 {
     margin-bottom: 45px;
   }
@@ -1975,6 +1985,7 @@ svg {
   .autoContainer {
     padding: 0 30px;
   }
+
   .header {
     padding: 25px 0;
   }
@@ -1992,6 +2003,7 @@ svg {
     display: block;
     z-index: 2;
   }
+
   .nav {
     position: fixed;
     top: 0;
@@ -2088,6 +2100,7 @@ svg {
     -webkit-transform: translate(0);
             transform: translate(0);
   }
+
   .products__inner h2 {
     margin-bottom: 35px;
   }
@@ -2105,6 +2118,7 @@ svg {
   .autoContainer {
     padding: 0 25px;
   }
+
   .products__inner {
     width: 100%;
     max-width: 850px;
@@ -2123,15 +2137,19 @@ svg {
   .productsItem__content {
     width: 100%;
   }
+
   h1 {
     font-size: 55px;
   }
+
   h2 {
     font-size: 40px;
   }
+
   h3 {
     font-size: 27px;
   }
+
   h4 {
     font-size: 23px;
   }
@@ -2145,6 +2163,7 @@ svg {
   ._hideMob {
     display: none;
   }
+
   .button {
     font-size: 16px;
   }
@@ -2152,6 +2171,7 @@ svg {
     width: 12px;
     height: 14px;
   }
+
   .productsItem {
     gap: 20px;
     padding: 15px 15px 20px;
@@ -2179,15 +2199,19 @@ svg {
   h1 {
     font-size: 40px;
   }
+
   h2 {
     font-size: 30px;
   }
+
   h3 {
     font-size: 25px;
   }
+
   h4 {
     font-size: 20px;
   }
+
   p {
     font-size: 14px;
   }
@@ -2200,9 +2224,11 @@ svg {
   p._xlg {
     font-size: 20px;
   }
+
   .button {
     font-size: 14px;
   }
+
   .products__inner-items {
     gap: 25px;
   }
