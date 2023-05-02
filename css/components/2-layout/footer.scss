@@ -1,6 +1,41 @@
 /// section footer
 .footer {
+  padding: 120px 0;
   margin-top: auto;
   &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    h3 {
+      color: $white;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 80px;
+      line-height: 1.2;
+      margin-bottom: 0.4em;
+    }
+    .logo {
+      margin: 20px 0;
+    }
+    &-buttons {
+      display: flex;
+      gap: 45px 20px;
+
+      a {
+        color: $white;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        transition: 0.2s ease-out;
+
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
   }
 }

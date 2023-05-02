@@ -137,20 +137,22 @@
 
     span {
       position: absolute;
-      top: 50%;
-      left: 0;
     }
 
     .blur {
       width: 1px;
       height: 1px;
       border-radius: 50%;
-
-      box-shadow: 0 0 200px 50px;
+      top: 50%;
+      box-shadow: 0 0 400px 100px;
 
       &:nth-child(1) {
-        left: calc(50% - 600px);
+        left: calc(50% - 500px);
         box-shadow: 0 0 500px 100px $green;
+      }
+      &:nth-child(2) {
+        right: calc(50% - 500px);
+        box-shadow: 0 0 500px 100px $lime;
       }
     }
   }
@@ -212,6 +214,192 @@
         font-size: 0.6em;
         color: $primary;
         transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+.tokenomics {
+  padding: 80px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    h3 {
+      width: 100%;
+      margin-bottom: 2em;
+      text-align: center;
+    }
+    &-banner {
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+      width: calc(50% - 20px);
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: calc(50% - 20px);
+
+      &-header {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 15px;
+      }
+      &-item {
+        position: relative;
+        background: rgba($color: $black, $alpha: 0.5);
+        padding: 1.8em;
+        overflow: hidden;
+
+        //font
+        color: $primary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+
+        &:after {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          width: 5px;
+          height: 100%;
+
+          background: $primary;
+        }
+        &:before {
+          position: absolute;
+          content: "";
+          left: 100%;
+          top: 0;
+          width: 0.8em;
+          height: 0.8em;
+          transform: translate(-50%, -50%) rotate(45deg);
+          background: $primary;
+        }
+
+        &:nth-child(odd) {
+          &::after {
+            background: $mint;
+          }
+        }
+      }
+    }
+  }
+  &__banner {
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__footer {
+    position: relative;
+    padding: 1.5em 1em 1.5em 2em;
+    background: $black;
+
+    //font
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+
+    &:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 10px;
+      height: 100%;
+      background: $primary;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      li {
+        small {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+.roadmap {
+  padding: 80px 0;
+  &__inner {
+    h3 {
+      text-align: center;
+      margin-bottom: 2em;
+    }
+    &-row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-item {
+      width: calc(33.3% - 15px);
+      background: url(../images/shapes/roadmap.png);
+      background-size: 100% 100%;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px 10px 40px 30px;
+
+        li {
+          position: relative;
+          color: $white;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 1.2;
+          padding-left: 1.5em;
+
+          &::before {
+            position: absolute;
+            content: "\e802";
+            top: 0.6em;
+            left: 0;
+            width: 1em;
+            height: 1em;
+            transform: translateY(-50%);
+            //font
+            font-family: "icons";
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+  &-title {
+    position: relative;
+    padding: 10px 10% 13% 10%;
+    z-index: 0;
+
+    color: $black;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+
+    &-bg {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
       }
     }
   }

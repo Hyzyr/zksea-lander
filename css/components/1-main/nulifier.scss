@@ -10,7 +10,7 @@ html {
   padding: 0px;
   border: none;
   outline: none;
-  font-family: $font-secondary;
+  font-family: $font-primary;
   box-sizing: border-box;
 }
 button {
@@ -34,24 +34,24 @@ input::-webkit-inner-spin-button {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #fff;
+  background: $black-bg;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba($color: #000, $alpha: 0.2);
-  border-radius: 10px;
+  background: rgba($color: $primary, $alpha: 0.2);
+  border-radius: 0;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba($color: #000, $alpha: 0.3);
+  background: rgba($color: $primary, $alpha: 0.3);
 }
 
 body {
   height: 100%;
   cursor: default;
-  font-family: $font-secondary, sans-serif;
+  font-family: $font-primary, sans-serif;
   font-size: 14px;
   color: $white;
   line-height: 1.2;
