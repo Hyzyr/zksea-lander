@@ -2709,6 +2709,10 @@ svg {
     width: 100%;
   }
 
+  .introduction__inner {
+    padding: 30px 20px;
+  }
+
   h1 {
     font-size: 25px;
   }
