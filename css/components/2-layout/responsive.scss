@@ -38,6 +38,12 @@
   .autoContainer {
     padding: 0 15px;
   }
+  ._hideMob {
+    display: none;
+  }
+  ._hideDesk {
+    display: block;
+  }
   @include typography-768;
   @include index-768;
   @include footer-768;
@@ -46,12 +52,7 @@
   body{
     font-size: 12px;
   }
-  ._hideMob {
-    display: none;
-  }
-  ._hideDesk {
-    display: block;
-  }
+
   @include components-580;
   @include header-580;
   @include typography-580;

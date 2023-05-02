@@ -2068,7 +2068,7 @@ svg {
   }
 
   .introduction__inner {
-    padding: 60px 50px 150px 50px;
+    padding: 90px 50px 170px 50px;
   }
   .introduction__inner-row {
     -webkit-box-orient: vertical;
@@ -2446,9 +2446,6 @@ svg {
     font-size: 20px;
   }
 
-  .introduction__inner {
-    padding: 60px 40px 150px 40px;
-  }
   .introduction__list-item {
     font-size: 16px;
   }
@@ -2456,6 +2453,14 @@ svg {
 @media (max-width: 768px) {
   .autoContainer {
     padding: 0 15px;
+  }
+
+  ._hideMob {
+    display: none;
+  }
+
+  ._hideDesk {
+    display: block;
   }
 
   h1 {
@@ -2469,13 +2474,16 @@ svg {
     font-size: 45px;
   }
 
+  .hero__inner h1 {
+    margin-bottom: 25px;
+  }
   .hero__inner-list {
     font-size: 24px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
   }
 
   .introduction__inner {
-    padding: 60px 30px 150px 30px;
+    padding: 60px;
   }
 
   .roadmap__inner-row {
@@ -2493,14 +2501,6 @@ svg {
 @media (max-width: 580px) {
   body {
     font-size: 12px;
-  }
-
-  ._hideMob {
-    display: none;
-  }
-
-  ._hideDesk {
-    display: block;
   }
 
   .button {
