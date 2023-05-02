@@ -207,15 +207,32 @@ h2 {
   font-size: 54px;
   font-weight: 700;
 }
+h2._lg {
+  font-size: 80px;
+}
 
 h3 {
   font-size: 34px;
   font-weight: 700;
 }
+h3._lg {
+  font-size: 40px;
+}
 
 h4 {
   font-size: 28px;
   font-weight: 600;
+}
+h4._sm {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+h6 {
+  font-size: 18px;
 }
 
 h5 {
@@ -267,7 +284,10 @@ html {
   padding: 0px;
   border: none;
   outline: none;
+<<<<<<< HEAD
   font-family: "Inter", sans-serif;
+=======
+>>>>>>> 9b717a3a831a3f7fc44f845aa9d79a102f1fc18e
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -311,7 +331,11 @@ input::-webkit-inner-spin-button {
 body {
   height: 100%;
   cursor: default;
+<<<<<<< HEAD
   font-family: "Inter", sans-serif, sans-serif;
+=======
+  font-family: "Inter", sans-serif;
+>>>>>>> 9b717a3a831a3f7fc44f845aa9d79a102f1fc18e
   font-size: 14px;
   color: #fff;
   line-height: 1.2;
@@ -611,6 +635,15 @@ svg {
 .button--border {
   border-radius: 80px;
   position: relative;
+<<<<<<< HEAD
+=======
+  background: -webkit-gradient(linear, left top, right top, color-stop(25%, #baff00), color-stop(75%, #06ffcc));
+  background: linear-gradient(90deg, #baff00 25%, #06ffcc 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+>>>>>>> 9b717a3a831a3f7fc44f845aa9d79a102f1fc18e
 }
 .button--border span {
   width: 14px;
@@ -632,7 +665,7 @@ svg {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.button--border:hover {
+.button--border:hover:after {
   background: #101010;
 }
 .button--border:before {
@@ -657,6 +690,12 @@ svg {
   background: #050406;
   z-index: -1;
   border-radius: 80px;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+}
+.button--border:active {
+  opacity: 1 !important;
 }
 .button--iconright svg {
   width: 0.6em;
@@ -763,7 +802,10 @@ svg {
   border-radius: 100px;
   padding: 0.3em 0.2em;
   color: #101010;
+<<<<<<< HEAD
   font-family: "Inter", sans-serif;
+=======
+>>>>>>> 9b717a3a831a3f7fc44f845aa9d79a102f1fc18e
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -832,7 +874,10 @@ svg {
 }
 .checkbox__outer label {
   color: #101010;
+<<<<<<< HEAD
   font-family: "Inter", sans-serif;
+=======
+>>>>>>> 9b717a3a831a3f7fc44f845aa9d79a102f1fc18e
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1349,6 +1394,7 @@ svg {
 }
 .productsItem p {
   line-height: 27px;
+  text-transform: capitalize;
 }
 .productsItem p span {
   width: 9px;
@@ -1385,6 +1431,7 @@ svg {
   line-height: 24px;
   position: relative;
   padding-left: 25px;
+  text-transform: capitalize;
 }
 .productsItem li::before {
   content: "";
@@ -1423,7 +1470,7 @@ svg {
   padding: 0.7em 2.8em;
 }
 .productsItem .button--border {
-  padding: 0.5em 1.2em 0.5em 1.4em;
+  padding: 0.7em 1.2em 0.7em 1.4em;
 }
 
 .bg {

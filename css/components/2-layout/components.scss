@@ -243,7 +243,11 @@
   &--border {
     border-radius: 80px;
     position: relative;
-
+    background: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
     span {
       width: 14px;
       height: 16px;
@@ -258,7 +262,9 @@
       }
     }
     &:hover {
-      background: $black;
+      &:after {
+        background: $black;
+      }
     }
     &:before {
       content: "";
@@ -281,6 +287,10 @@
       background: $black-2;
       z-index: -1;
       border-radius: 80px;
+      @include transition;
+    }
+    &:active{
+      opacity: 1 !important;
     }
   }
   &--iconright {
@@ -403,7 +413,6 @@
   padding: 0.3em 0.2em;
 
   color: $black;
-  font-family: $font-primary;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -462,10 +471,8 @@
   &__outer {
     display: flex;
     align-items: center;
-
     label {
       color: $black;
-      font-family: $font-primary;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;

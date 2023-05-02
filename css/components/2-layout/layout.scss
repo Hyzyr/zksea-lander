@@ -49,6 +49,7 @@
     }
     p {
       line-height: 27px;
+      text-transform: capitalize;
       span {
         width: 9px;
         height: 10px;
@@ -73,6 +74,7 @@
       line-height: 24px;
       position: relative;
       padding-left: 25px;
+      text-transform: capitalize;
       &::before {
         content: "";
         width: 5px;
@@ -110,7 +112,7 @@
     .button {
       padding: 0.7em 2.8em;
       &--border {
-        padding: 0.5em 1.2em 0.5em 1.4em;
+        padding: 0.7em 1.2em 0.7em 1.4em;
       }
     }
   }
