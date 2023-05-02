@@ -63,6 +63,7 @@ p {
   }
 }
 
+
 @mixin typography-1280 {
   h1 {
     font-size: 65px;
@@ -193,7 +194,7 @@ p {
     }
   }
   h3 {
-    font-size: 23px;
+    font-size: 21px;
   }
   p {
     &._lg {

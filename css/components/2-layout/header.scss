@@ -23,9 +23,14 @@
       align-items: center;
       justify-content: center;
       width: 150px;
+      @include transition;
       img {
         width: 100%;
         object-fit: contain;
+      }
+
+      &:hover {
+        opacity: 0.8;
       }
     }
   }
