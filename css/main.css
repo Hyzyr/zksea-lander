@@ -2167,10 +2167,6 @@ svg {
   .button {
     font-size: 16px;
   }
-  .button--border span {
-    width: 12px;
-    height: 14px;
-  }
 
   .productsItem {
     gap: 20px;
