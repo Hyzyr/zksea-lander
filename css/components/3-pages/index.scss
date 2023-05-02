@@ -463,6 +463,12 @@
         }
       }
     }
+    .text--primary {
+      display: inline-block;
+      width: 100%;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
   }
 }
 .roadmap {
@@ -685,13 +691,13 @@
       margin: 0 auto;
     }
   }
-  .benefits{
+  .benefits {
     padding: 70px 0 60px;
   }
-  .introduction{
+  .introduction {
     padding: 60px 0;
   }
-  .roadmap{
+  .roadmap {
     padding: 60px 0;
   }
 }
@@ -750,6 +756,7 @@
     &__inner {
       &-list {
         font-size: 24px;
+        margin-bottom: 60px;
       }
     }
   }
@@ -822,11 +829,14 @@
       }
     }
   }
-  .roadmap{
+  .roadmap {
     padding: 40px 0;
   }
-  .introduction{
+  .introduction {
     padding: 40px 0;
+    &__inner {
+      padding: 40px;
+    }
   }
 }
 @mixin index-460 {
@@ -844,9 +854,6 @@
     }
   }
   .introduction {
-    &__inner {
-      padding: 60px 20px 150px 20px;
-    }
     &__list {
       &-item {
         font-size: 14px;
@@ -874,12 +881,12 @@
   }
   .roadmap {
     &__inner {
-      h3{
-      margin-bottom: 30px;
+      h3 {
+        margin-bottom: 30px;
       }
       &-item {
         ul {
-          li{
+          li {
             font-size: 16px;
           }
         }

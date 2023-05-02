@@ -49,6 +49,9 @@
   ._hideMob {
     display: none;
   }
+  ._hideDesk {
+    display: block;
+  }
   @include components-580;
   @include header-580;
   @include typography-580;

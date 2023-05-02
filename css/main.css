@@ -662,7 +662,7 @@ svg {
   position: absolute;
   top: 0;
   left: 0;
-  background: #19141D;
+  background: #050406;
   z-index: -1;
   border-radius: inherit;
   -webkit-transition: all 0.2s ease-in-out 0s;
@@ -696,7 +696,6 @@ svg {
 .button--square {
   cursor: pointer;
   padding: 1.2em 1em;
-  border: 2px solid transparent;
   gap: 0.6em;
   border-radius: 0;
   position: relative;
@@ -712,6 +711,9 @@ svg {
   padding: 0.6em 1em;
   width: 100%;
   background: #19141D;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
 }
 .button--square:active {
   border-color: rgba(47, 91, 209, 0.8);
@@ -734,7 +736,7 @@ svg {
   width: 100%;
   height: 35%;
   background: transparent;
-  border: 1px solid #acf10e;
+  border: 2px solid #acf10e;
   border-top-width: 0;
   position: absolute;
   bottom: 0;
@@ -748,7 +750,7 @@ svg {
   width: 100%;
   height: 35%;
   background: transparent;
-  border: 1px solid #acf10e;
+  border: 2px solid #acf10e;
   border-bottom-width: 0;
   position: absolute;
   top: 0;
@@ -758,10 +760,12 @@ svg {
   -moz-transition: all 0.2s ease-in-out 0s;
 }
 .button--square:hover::before {
-  border-color: #050406;
+  border-color: #acf10e;
+  height: 50%;
 }
 .button--square:hover::after {
-  border-color: #050406;
+  border-color: #acf10e;
+  height: 50%;
 }
 .button--square:hover .custIcon {
   opacity: 1;
@@ -770,6 +774,7 @@ svg {
 }
 .button--square:hover span {
   color: #acf10e;
+  background: #181b10;
 }
 .button:active {
   opacity: 0.7;
@@ -1091,6 +1096,10 @@ svg {
 .inlineIcon svg {
   width: 100%;
   height: 100%;
+}
+
+._hideDesk {
+  display: none;
 }
 
 .footer {
@@ -1940,6 +1949,12 @@ svg {
 .tokenomics__footer ul li small {
   font-weight: 700;
 }
+.tokenomics__footer .text--primary {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 
 .roadmap {
   padding: 80px 0;
@@ -2416,6 +2431,7 @@ svg {
   }
   .hero__inner-list {
     font-size: 24px;
+    margin-bottom: 60px;
   }
   .introduction__inner {
     padding: 60px 30px 150px 30px;
@@ -2438,8 +2454,14 @@ svg {
   ._hideMob {
     display: none;
   }
+  ._hideDesk {
+    display: block;
+  }
   .button {
     font-size: 16px;
+  }
+  .title {
+    padding: 0.85em 1.63em;
   }
   .header {
     padding: 15px 0;
@@ -2518,6 +2540,9 @@ svg {
   .introduction {
     padding: 40px 0;
   }
+  .introduction__inner {
+    padding: 40px;
+  }
   .footer {
     padding: 60px 0;
   }
@@ -2528,7 +2553,7 @@ svg {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 20px;
-    max-width: 340px;
+    max-width: 300px;
   }
   .footer__inner .button--square {
     font-size: 13px;
@@ -2568,9 +2593,6 @@ svg {
   .benefits__item {
     gap: 0.7em;
     padding: 20px;
-  }
-  .introduction__inner {
-    padding: 60px 20px 150px 20px;
   }
   .introduction__list-item {
     font-size: 14px;
