@@ -31,10 +31,6 @@ h5 {
 h6 {
   font-size: 18px;
 }
-h5 {
-  font-size: 24px;
-  font-weight: 600;
-}
 p {
   font-size: 18px;
   &._sm {
@@ -67,59 +63,63 @@ p {
   }
 }
 
-@mixin typography-1160 {
+@mixin typography-1280 {
   h1 {
     font-size: 65px;
   }
   h2 {
     font-size: 50px;
-  }
-  h3 {
-    font-size: 30px;
-  }
-  h4 {
-    font-size: 25px;
-  }
-  p {
-    font-size: 16px;
-    &._sm {
-      font-size: 14px;
-    }
     &._lg {
-      font-size: 18px;
+      font-size: 75px;
     }
-    &._xlg {
-      font-size: 22px;
+  }
+  
+}
+@mixin typography-1160 {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 45px;
+    &._lg {
+      font-size: 70px;
     }
   }
 }
-
-@mixin typography-940 {
+@mixin typography-1025 {
   h1 {
     font-size: 55px;
   }
   h2 {
     font-size: 40px;
+    &._lg {
+      font-size: 65px;
+    }
   }
   h3 {
-    font-size: 27px;
-  }
-  h4 {
-    font-size: 23px;
+    font-size: 32px;
   }
 }
-@mixin typography-460 {
+@mixin typography-940 {
   h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
   h2 {
-    font-size: 30px;
+    font-size: 37px;
+    &._lg {
+      font-size: 55px;
+    }
   }
-  h3 {
-    font-size: 25px;
+}
+@mixin typography-840 {
+  h1 {
+    font-size: 45px;
   }
-  h4 {
-    font-size: 20px;
+  h2 {
+    font-size: 35px;
+    &._lg {
+      font-size: 50px;
+    }
   }
   p {
     font-size: 14px;
@@ -131,6 +131,76 @@ p {
     }
     &._xlg {
       font-size: 20px;
+    }
+  }
+}
+@mixin typography-768 {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 32px;
+    &._lg {
+      font-size: 45px;
+    }
+  }
+}
+@mixin typography-580 {
+  h1 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  h4{
+    font-size: 25px;
+  }
+ 
+}
+@mixin typography-460 {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 27px;
+    &._lg {
+      font-size: 40px;
+    }
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5{
+    font-size: 20px;
+  }
+  p {
+    &._xlg {
+      font-size: 18px;
+    }
+  }
+}
+@mixin typography-380 {
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 25px;
+    &._lg {
+      font-size: 30px;
+    }
+  }
+  h3 {
+    font-size: 23px;
+  }
+  p {
+    &._lg {
+      font-size: 14px;
+    }
+    &._xlg {
+      font-size: 16px;
     }
   }
 }
