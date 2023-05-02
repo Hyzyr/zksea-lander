@@ -284,10 +284,6 @@ html {
   padding: 0px;
   border: none;
   outline: none;
-<<<<<<< HEAD
-  font-family: "Inter", sans-serif;
-=======
->>>>>>> 9b717a3a831a3f7fc44f845aa9d79a102f1fc18e
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -331,11 +327,7 @@ input::-webkit-inner-spin-button {
 body {
   height: 100%;
   cursor: default;
-<<<<<<< HEAD
-  font-family: "Inter", sans-serif, sans-serif;
-=======
   font-family: "Inter", sans-serif;
->>>>>>> 9b717a3a831a3f7fc44f845aa9d79a102f1fc18e
   font-size: 14px;
   color: #fff;
   line-height: 1.2;
@@ -635,15 +627,12 @@ svg {
 .button--border {
   border-radius: 80px;
   position: relative;
-<<<<<<< HEAD
-=======
   background: -webkit-gradient(linear, left top, right top, color-stop(25%, #baff00), color-stop(75%, #06ffcc));
   background: linear-gradient(90deg, #baff00 25%, #06ffcc 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
->>>>>>> 9b717a3a831a3f7fc44f845aa9d79a102f1fc18e
 }
 .button--border span {
   width: 14px;
@@ -802,10 +791,6 @@ svg {
   border-radius: 100px;
   padding: 0.3em 0.2em;
   color: #101010;
-<<<<<<< HEAD
-  font-family: "Inter", sans-serif;
-=======
->>>>>>> 9b717a3a831a3f7fc44f845aa9d79a102f1fc18e
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -874,10 +859,6 @@ svg {
 }
 .checkbox__outer label {
   color: #101010;
-<<<<<<< HEAD
-  font-family: "Inter", sans-serif;
-=======
->>>>>>> 9b717a3a831a3f7fc44f845aa9d79a102f1fc18e
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
