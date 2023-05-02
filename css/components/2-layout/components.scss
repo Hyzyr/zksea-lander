@@ -244,6 +244,7 @@
   &--border {
     border-radius: 80px;
     position: relative;
+<<<<<<< HEAD
 
     .button__ico {
       display: flex;
@@ -256,6 +257,15 @@
         height: 100%;
         object-fit: contain;
       }
+=======
+    span {
+      background: $gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+     
+>>>>>>> e78df613bcd0ff559d57f2f1ca50a692a7fc69c6
     }
 
     & > span {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "./animate.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @-webkit-keyframes zoomInCenter {
@@ -171,31 +172,31 @@
   -moz-osx-font-smoothing: grayscale;
 }
 .icon--right-arrow:before {
-  content: "\e801";
+  content: "";
 }
 .icon--right-arrow2:before {
-  content: "\e802";
+  content: "";
 }
 .icon--telegram:before {
-  content: "\e803";
+  content: "";
 }
 .icon--twitter:before {
-  content: "\e804";
+  content: "";
 }
 .icon--book:before {
-  content: "\e806";
+  content: "";
 }
 .icon--left-arrow:before {
-  content: "\e807";
+  content: "";
 }
 .icon--right:before {
-  content: "\e809";
+  content: "";
 }
 .icon--youtube-play:before {
-  content: "\f16a";
+  content: "";
 }
 .icon--reddit-alien:before {
-  content: "\f281";
+  content: "";
 }
 
 h1 {
@@ -487,11 +488,14 @@ svg {
   border-top: unset;
   -webkit-transition: max-height 0.3s ease, border-color 0s ease 0.3s, opacity 0.1s ease 0.2s;
   transition: max-height 0.3s ease, border-color 0s ease 0.3s, opacity 0.1s ease 0.2s;
-  scrollbar-width: none; /* Firefox 64 */
-  -ms-overflow-style: none; /* Internet Explorer 11 */
+  scrollbar-width: none;
+  /* Firefox 64 */
+  -ms-overflow-style: none;
+  /* Internet Explorer 11 */
   z-index: 1;
 }
-.input--select .input__dropdown::-webkit-scrollbar { /** WebKit */
+.input--select .input__dropdown::-webkit-scrollbar {
+  /** WebKit */
   display: none;
 }
 .input--select .input__dropdown-item {
@@ -628,6 +632,7 @@ svg {
 .button--border {
   border-radius: 80px;
   position: relative;
+<<<<<<< HEAD
 }
 .button--border .button__ico {
   display: -webkit-box;
@@ -656,6 +661,17 @@ svg {
   background-clip: text;
   text-fill-color: transparent;
 }
+=======
+}
+.button--border span {
+  background: -webkit-gradient(linear, left top, right top, color-stop(25%, #baff00), color-stop(75%, #06ffcc));
+  background: linear-gradient(90deg, #baff00 25%, #06ffcc 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+>>>>>>> e78df613bcd0ff559d57f2f1ca50a692a7fc69c6
 .button--border:hover:after {
   opacity: 0.8;
 }
@@ -1455,6 +1471,26 @@ svg {
 .productsItem .button--border {
   padding: 0.7em 1.2em 0.7em 1.4em;
 }
+.productsItem .button--ico {
+  width: 14px;
+  height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 10px;
+}
+.productsItem .button--ico img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 
 .bg {
   position: relative;
@@ -1889,7 +1925,7 @@ svg {
 }
 .roadmap__inner-item ul li::before {
   position: absolute;
-  content: "\e802";
+  content: "";
   top: 0.6em;
   left: 0;
   width: 1em;
@@ -1932,18 +1968,23 @@ svg {
   .autoContainer {
     padding: 0 40px;
   }
+
   h1 {
     font-size: 65px;
   }
+
   h2 {
     font-size: 50px;
   }
+
   h3 {
     font-size: 30px;
   }
+
   h4 {
     font-size: 25px;
   }
+
   p {
     font-size: 16px;
   }
@@ -1956,6 +1997,7 @@ svg {
   p._xlg {
     font-size: 22px;
   }
+
   .products__inner h2 {
     margin-bottom: 45px;
   }
@@ -1975,6 +2017,7 @@ svg {
   .autoContainer {
     padding: 0 30px;
   }
+
   .header {
     padding: 25px 0;
   }
@@ -1992,6 +2035,7 @@ svg {
     display: block;
     z-index: 2;
   }
+
   .nav {
     position: fixed;
     top: 0;
@@ -2088,6 +2132,7 @@ svg {
     -webkit-transform: translate(0);
             transform: translate(0);
   }
+
   .products__inner h2 {
     margin-bottom: 35px;
   }
@@ -2105,6 +2150,7 @@ svg {
   .autoContainer {
     padding: 0 25px;
   }
+
   .products__inner {
     width: 100%;
     max-width: 850px;
@@ -2123,15 +2169,19 @@ svg {
   .productsItem__content {
     width: 100%;
   }
+
   h1 {
     font-size: 55px;
   }
+
   h2 {
     font-size: 40px;
   }
+
   h3 {
     font-size: 27px;
   }
+
   h4 {
     font-size: 23px;
   }
@@ -2145,6 +2195,7 @@ svg {
   ._hideMob {
     display: none;
   }
+
   .button {
     font-size: 16px;
   }
@@ -2152,6 +2203,7 @@ svg {
     width: 12px;
     height: 14px;
   }
+
   .productsItem {
     gap: 20px;
     padding: 15px 15px 20px;
@@ -2179,15 +2231,19 @@ svg {
   h1 {
     font-size: 40px;
   }
+
   h2 {
     font-size: 30px;
   }
+
   h3 {
     font-size: 25px;
   }
+
   h4 {
     font-size: 20px;
   }
+
   p {
     font-size: 14px;
   }
@@ -2200,9 +2256,11 @@ svg {
   p._xlg {
     font-size: 20px;
   }
+
   .button {
     font-size: 14px;
   }
+
   .products__inner-items {
     gap: 25px;
   }
