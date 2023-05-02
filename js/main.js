@@ -1,17 +1,20 @@
 var menu = document.getElementById("menu");
 var menuBtn = document.getElementById("menuBtn");
+var header = document.getElementById("header");
 var body = document.body;
 
 const closeMenu = () => {
   menu.classList.remove("active");
   menuBtn.classList.remove("active");
   body.classList.remove("active");
+  header.classList.remove("active");
 };
 
 menuBtn.onclick = function () {
   menu.classList.toggle("active");
   menuBtn.classList.toggle("active");
   body.classList.toggle("active");
+  header.classList.toggle("active");
 };
 window.onclick = function (event) {
   if (event.target == menu) {
@@ -19,7 +22,6 @@ window.onclick = function (event) {
   }
 };
 
-const header = document.getElementById("header");
 if (header)
   window.addEventListener("scroll", () => {
     if (document.documentElement.scrollTop > 400) {

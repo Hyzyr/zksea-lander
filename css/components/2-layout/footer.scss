@@ -8,11 +8,10 @@
     align-items: center;
     gap: 30px;
 
-    h3 {
+    h2 {
       color: $white;
       font-style: normal;
       font-weight: 500;
-      font-size: 80px;
       line-height: 1.2;
       margin-bottom: 0.4em;
     }
@@ -22,7 +21,6 @@
     &-buttons {
       display: flex;
       gap: 45px 20px;
-
       a {
         color: $white;
         font-family: "Inter";
@@ -35,6 +33,44 @@
         &:hover {
           opacity: 0.6;
         }
+      }
+    }
+  }
+}
+@mixin footer-1160 {
+  .footer {
+    padding: 100px 0;
+  }
+}
+@mixin footer-1025 {
+  .footer {
+    padding: 80px 0;
+  }
+}
+@mixin footer-768 {
+  .footer {
+    &__inner {
+      gap: 20px;
+    }
+  }
+}
+@mixin footer-580 {
+  .footer {
+    padding: 60px 0;
+    &__inner {
+      &-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 340px;
+      }
+      .button {
+        &--square {
+          font-size: 13px;
+        }
+      }
+      .logo {
+        margin: 10px 0;
       }
     }
   }
