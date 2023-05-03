@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import "./animate.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @-webkit-keyframes zoomInCenter {
@@ -172,31 +171,31 @@
   -moz-osx-font-smoothing: grayscale;
 }
 .icon--right-arrow:before {
-  content: "";
+  content: "\e801";
 }
 .icon--right-arrow2:before {
-  content: "";
+  content: "\e802";
 }
 .icon--telegram:before {
-  content: "";
+  content: "\e803";
 }
 .icon--twitter:before {
-  content: "";
+  content: "\e804";
 }
 .icon--book:before {
-  content: "";
+  content: "\e806";
 }
 .icon--left-arrow:before {
-  content: "";
+  content: "\e807";
 }
 .icon--right:before {
-  content: "";
+  content: "\e809";
 }
 .icon--youtube-play:before {
-  content: "";
+  content: "\f16a";
 }
 .icon--reddit-alien:before {
-  content: "";
+  content: "\f281";
 }
 
 h1 {
@@ -483,14 +482,11 @@ svg {
   border-top: unset;
   -webkit-transition: max-height 0.3s ease, border-color 0s ease 0.3s, opacity 0.1s ease 0.2s;
   transition: max-height 0.3s ease, border-color 0s ease 0.3s, opacity 0.1s ease 0.2s;
-  scrollbar-width: none;
-  /* Firefox 64 */
-  -ms-overflow-style: none;
-  /* Internet Explorer 11 */
+  scrollbar-width: none; /* Firefox 64 */
+  -ms-overflow-style: none; /* Internet Explorer 11 */
   z-index: 1;
 }
-.input--select .input__dropdown::-webkit-scrollbar {
-  /** WebKit */
+.input--select .input__dropdown::-webkit-scrollbar { /** WebKit */
   display: none;
 }
 .input--select .input__dropdown-item {
@@ -2005,7 +2001,7 @@ svg {
 }
 .roadmap__inner-item ul li::before {
   position: absolute;
-  content: "";
+  content: "\e802";
   top: 0.6em;
   left: 0;
   width: 1em;
@@ -2047,7 +2043,6 @@ svg {
             flex-direction: column;
     gap: 1em;
   }
-
   .introduction__bg .blur:nth-child(1) {
     left: 100%;
   }
@@ -2059,14 +2054,12 @@ svg {
   h1 {
     font-size: 65px;
   }
-
   h2 {
     font-size: 50px;
   }
   h2._lg {
     font-size: 75px;
   }
-
   .introduction__inner {
     padding: 90px 50px 170px 50px;
   }
@@ -2076,11 +2069,9 @@ svg {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
   .productsItem__content {
     padding-top: 10px;
   }
-
   .roadmap__inner-item {
     width: calc(33.3% - 10px);
   }
@@ -2089,32 +2080,27 @@ svg {
   .autoContainer {
     padding: 0 40px;
   }
-
   .header__inner .logo {
     width: 140px;
   }
   .header + section {
     margin-top: 120px;
   }
-
   h1 {
     font-size: 60px;
   }
-
   h2 {
     font-size: 45px;
   }
   h2._lg {
     font-size: 70px;
   }
-
   .benefits {
     padding: 70px 0;
   }
   .benefits__item {
     width: calc(50% - 10px);
   }
-
   .products {
     padding: 70px 0;
   }
@@ -2132,7 +2118,6 @@ svg {
   .productsItem p {
     line-height: 24px;
   }
-
   .tokenomics {
     padding: 70px 0;
   }
@@ -2143,7 +2128,6 @@ svg {
     font-size: 15px;
     padding: 1.5em;
   }
-
   .roadmap {
     padding: 70px 0;
   }
@@ -2158,7 +2142,6 @@ svg {
   .roadmap__inner-item {
     width: calc(50% - 20px);
   }
-
   .footer {
     padding: 100px 0;
   }
@@ -2167,7 +2150,6 @@ svg {
   .autoContainer {
     padding: 0 30px;
   }
-
   .header {
     padding: 20px 0;
   }
@@ -2188,7 +2170,6 @@ svg {
   .header + section {
     margin-top: 100px;
   }
-
   .nav {
     position: fixed;
     top: 81px;
@@ -2296,11 +2277,9 @@ svg {
     -webkit-transform: translate(0);
             transform: translate(0);
   }
-
   .hero__inner-list {
     font-size: 28px;
   }
-
   .products {
     padding: 60px 0 70px;
   }
@@ -2316,7 +2295,6 @@ svg {
   .productsItem ul {
     gap: 10px;
   }
-
   .tokenomics {
     padding: 60px 0;
   }
@@ -2338,34 +2316,27 @@ svg {
     max-width: 700px;
     margin: 0 auto;
   }
-
   .benefits {
     padding: 70px 0 60px;
   }
-
   .introduction {
     padding: 60px 0;
   }
-
   .roadmap {
     padding: 60px 0;
   }
-
   h1 {
     font-size: 55px;
   }
-
   h2 {
     font-size: 40px;
   }
   h2._lg {
     font-size: 65px;
   }
-
   h3 {
     font-size: 32px;
   }
-
   .footer {
     padding: 80px 0;
   }
@@ -2374,22 +2345,18 @@ svg {
   .autoContainer {
     padding: 0 25px;
   }
-
   h1 {
     font-size: 50px;
   }
-
   h2 {
     font-size: 37px;
   }
   h2._lg {
     font-size: 55px;
   }
-
   .hero__inner-list {
     font-size: 26px;
   }
-
   .benefits__inner {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2400,7 +2367,6 @@ svg {
     max-width: 850px;
     margin: 0 auto;
   }
-
   .products__inner {
     width: 100%;
     max-width: 850px;
@@ -2425,14 +2391,12 @@ svg {
   h1 {
     font-size: 45px;
   }
-
   h2 {
     font-size: 35px;
   }
   h2._lg {
     font-size: 50px;
   }
-
   p {
     font-size: 14px;
   }
@@ -2445,7 +2409,6 @@ svg {
   p._xlg {
     font-size: 20px;
   }
-
   .introduction__list-item {
     font-size: 16px;
   }
@@ -2454,26 +2417,21 @@ svg {
   .autoContainer {
     padding: 0 15px;
   }
-
   ._hideMob {
     display: none;
   }
-
   ._hideDesk {
     display: block;
   }
-
   h1 {
     font-size: 40px;
   }
-
   h2 {
     font-size: 32px;
   }
   h2._lg {
     font-size: 45px;
   }
-
   .hero__inner h1 {
     margin-bottom: 25px;
   }
@@ -2481,11 +2439,9 @@ svg {
     font-size: 24px;
     margin-bottom: 80px;
   }
-
   .introduction__inner {
     padding: 60px 30px;
   }
-
   .roadmap__inner-row {
     gap: 30px;
   }
@@ -2493,7 +2449,6 @@ svg {
     width: 100%;
     max-width: 500px;
   }
-
   .footer__inner {
     gap: 20px;
   }
@@ -2502,15 +2457,12 @@ svg {
   body {
     font-size: 12px;
   }
-
   .button {
     font-size: 16px;
   }
-
   .title {
     padding: 0.85em 1.63em;
   }
-
   .header {
     padding: 15px 0;
   }
@@ -2523,7 +2475,6 @@ svg {
   .header + section {
     margin-top: 80px;
   }
-
   .nav {
     top: 68px;
     height: calc(100% - 68px);
@@ -2531,23 +2482,18 @@ svg {
   .nav__inner {
     padding: 40px 20px;
   }
-
   h1 {
     font-size: 35px;
   }
-
   h3 {
     font-size: 30px;
   }
-
   h4 {
     font-size: 25px;
   }
-
   .hero__inner-list {
     font-size: 22px;
   }
-
   .benefits {
     padding: 50px 0 40px;
   }
@@ -2557,7 +2503,6 @@ svg {
   .benefits__item-logo {
     width: 90px;
   }
-
   .products {
     padding: 40px 0 50px;
   }
@@ -2583,25 +2528,21 @@ svg {
     height: 4px;
     left: 0;
   }
-
   .tokenomics {
     padding: 40px 0;
   }
   .tokenomics__inner h3 {
     margin-bottom: 0;
   }
-
   .roadmap {
     padding: 40px 0;
   }
-
   .introduction {
     padding: 40px 0;
   }
   .introduction__inner {
     padding: 40px 20px;
   }
-
   .footer {
     padding: 60px 0;
   }
@@ -2625,47 +2566,37 @@ svg {
   h1 {
     font-size: 30px;
   }
-
   h2 {
     font-size: 27px;
   }
   h2._lg {
     font-size: 40px;
   }
-
   h3 {
     font-size: 25px;
   }
-
   h4 {
     font-size: 20px;
   }
-
   h5 {
     font-size: 20px;
   }
-
   p._xlg {
     font-size: 18px;
   }
-
   .button {
     font-size: 14px;
   }
-
   .hero__inner-list {
     font-size: 20px;
   }
-
   .benefits__item {
     gap: 0.7em;
     padding: 20px;
   }
-
   .introduction__list-item {
     font-size: 14px;
   }
-
   .products__inner-items {
     gap: 20px;
   }
@@ -2679,7 +2610,6 @@ svg {
   .productsItem p {
     line-height: 20px;
   }
-
   .roadmap__inner h3 {
     margin-bottom: 30px;
   }
@@ -2691,14 +2621,12 @@ svg {
   .hero__inner-list {
     font-size: 16px;
   }
-
   .benefits__item {
     padding: 20px;
   }
   .benefits__item-progress {
     font-size: 14px;
   }
-
   .productsItem__content-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2708,26 +2636,21 @@ svg {
   .productsItem__content .button {
     width: 100%;
   }
-
   .introduction__inner {
     padding: 30px 20px;
   }
-
   h1 {
     font-size: 25px;
   }
-
   h2 {
     font-size: 25px;
   }
   h2._lg {
     font-size: 30px;
   }
-
   h3 {
     font-size: 21px;
   }
-
   p._lg {
     font-size: 14px;
   }
