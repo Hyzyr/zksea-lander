@@ -130,6 +130,13 @@
   h3{
     &.grow{
       flex: 1;
+
+    }
+  }
+  .button{
+    position: relative;
+    &:hover{
+      opacity: 1;
     }
   }
 }

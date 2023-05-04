@@ -67,3 +67,14 @@ window.onscroll = function () {
 new WOW().init({
   boxClass: "wow",
 });
+
+let inviteFriend = document.getElementById("inviteFriend");
+let invitePop = document.getElementById("invitePop");
+inviteFriend.addEventListener(`click`, () => {
+  const COPY_TEXT = "https://nftzkzerosea.pro";
+  navigator.clipboard.writeText(COPY_TEXT).then(() => {
+    // on successful clipboard copy, update DOM
+    // document.getElementById(`copy-output`).textContent = `${COPY_TEXT}`;
+  });
+  invitePop.innerHTML = `<span>Copied</span>`;
+});
