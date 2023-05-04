@@ -18,10 +18,9 @@
       display: flex;
       font-size: 30px;
       gap: 1.5em;
-
       &-ico {
         position: absolute;
-        top: 0;
+        top: 5px;
         left: 0;
         width: 1em;
         height: 1em;
@@ -34,12 +33,13 @@
       &-item {
         position: relative;
         padding-left: 1.5em;
+        width: calc(50% - 10px);
 
         //font
         font-style: normal;
         font-weight: 700;
         font-size: inherit;
-        line-height: 1.4;
+        line-height: 1.6;
       }
     }
     &-banner {
@@ -62,7 +62,7 @@
   }
 }
 .benefits {
-  padding: 80px 0;
+  padding: 90px 0 80px;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -122,6 +122,9 @@
         min-width: 175px;
       }
     }
+  }
+  .autoContainer {
+    max-width: 1450px;
   }
 }
 .introduction {
@@ -260,6 +263,10 @@
       position: relative;
       padding-top: 20px;
       z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
       &-row {
         display: flex;
         gap: 18px;
@@ -435,12 +442,10 @@
     position: relative;
     padding: 1.5em 1em 1.5em 2em;
     background: $black;
-    overflow: hidden;
     //font
     font-style: normal;
     font-size: 16px;
     line-height: 1.2;
-
     @include ellipsis;
 
     &:after {
@@ -452,7 +457,6 @@
       height: 100%;
       background: $primary;
     }
-
     ul {
       display: flex;
       flex-direction: column;
@@ -468,6 +472,9 @@
       width: 100%;
       text-overflow: ellipsis;
       overflow: hidden;
+    }
+    #copyText {
+      cursor: pointer;
     }
   }
 }
@@ -551,6 +558,12 @@
       &-list {
         flex-direction: column;
         gap: 1em;
+        &-item {
+          width: 100%;
+          br {
+            display: none;
+          }
+        }
       }
     }
   }
@@ -751,7 +764,7 @@
 @mixin index-768 {
   .hero {
     &__inner {
-      h1{
+      h1 {
         margin-bottom: 25px;
       }
       &-list {
@@ -922,8 +935,8 @@
       }
     }
   }
-  .introduction{
-    &__inner{
+  .introduction {
+    &__inner {
       padding: 30px 20px;
     }
   }
