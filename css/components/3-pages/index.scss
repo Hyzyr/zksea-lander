@@ -131,7 +131,6 @@
 .introduction {
   position: relative;
   padding: 80px 0;
-
   .autoContainer {
     max-width: 1220px;
   }
@@ -224,6 +223,9 @@
       }
     }
   }
+  .autoContainer {
+    max-width: 1280px;
+  }
 }
 .products {
   padding: 80px 0;
@@ -236,7 +238,7 @@
       gap: 30px;
     }
     h2 {
-      text-align: left;
+      text-align: center;
       margin-bottom: 54px;
     }
   }
@@ -343,6 +345,7 @@
     }
     .button {
       padding: 0.7em 2.8em;
+      position: relative;
       &--border {
         padding: 0.7em 1.2em 0.7em 1.4em;
       }
@@ -447,8 +450,6 @@
     font-style: normal;
     font-size: 16px;
     line-height: 1.2;
-    @include ellipsis;
-
     &:after {
       position: absolute;
       content: "";
@@ -470,12 +471,44 @@
     }
     .text--primary {
       display: inline-block;
-      width: 100%;
+      width: auto;
       text-overflow: ellipsis;
       overflow: hidden;
     }
-    #copyText {
-      cursor: pointer;
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .copy {
+        cursor: pointer;
+        position: relative;
+        &__button {
+          width: 20px;
+          height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg {
+            width: 100%;
+            fill: $white;
+            @include transition;
+          }
+          &:hover {
+            svg {
+              fill: $primary;
+            }
+          }
+        }
+        .popUp{
+          @include transition;
+        }
+        &:hover{
+          .popUp{
+            opacity: 1;
+            transform: translateX(-50%) scale(1);
+          }
+        }
+      }
     }
   }
 }

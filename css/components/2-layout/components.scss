@@ -422,7 +422,7 @@
   &:hover {
     .popUp {
       opacity: 1;
-  transform:translateX(-50%) scale(1);
+      transform: translateX(-50%) scale(1);
     }
   }
 }
@@ -733,21 +733,21 @@
 }
 .popUp {
   position: absolute;
-  bottom: calc(100% + 20px);
+  top: calc(100% + 20px);
   left: 50%;
   padding: 0.7em 2em;
-  background: $black-bg;
+  background: $primary;
   border-radius: 10px;
-  transition: .3s ease;
+  transition: 0.3s ease;
   opacity: 0;
   transform: translateX(-50%) scale(0);
   pointer-events: none;
+  z-index: 2;
   span {
-    font-size: 14px;
+    font-size: 18px;
     white-space: nowrap;
-    color: $white;
+    color: $black;
     position: relative;
-    color: $primary;
     background: unset;
     -webkit-background-clip: unset;
     -webkit-text-fill-color: unset;
@@ -760,15 +760,23 @@
     height: 15px;
     position: absolute;
     left: 50%;
-    top: 80%;
+    bottom: 80%;
     z-index: -1;
-    background: $black-bg;
+    background: $primary;
     transform: translateX(-50%) rotate(45deg);
   }
+  &.up {
+    top: unset;
+    bottom: calc(100% + 20px);
+    &:after {
+      top: 80%;
+      bottom: unset;
+    }
+  }
 }
-.anchor{
+.anchor {
   position: relative;
-  top :-50px;
+  top: -50px;
 }
 @mixin components-580 {
   .button {
@@ -777,9 +785,19 @@
   .title {
     padding: 0.85em 1.63em;
   }
+  .popUp{
+    span{
+      font-size: 16px;
+    }
+  }
 }
 @mixin components-460 {
   .button {
     font-size: 14px;
+  }
+  .popUp{
+    span{
+      font-size: 14px;
+    }
   }
 }

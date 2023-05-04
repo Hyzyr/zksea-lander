@@ -25,13 +25,16 @@ function scrollFunc() {
   }
 }
 
-var copyText = document.getElementById("copyText");
-copyText.addEventListener(`click`, (event) => {
-  const COPY_TEXT = event.target.innerText;
+let copyText = document.getElementById("copyText");
+let copyBtn = document.getElementById("copyBtn");
+let copyPop = document.getElementById("copyPop");
+copyBtn.addEventListener(`click`, () => {
+  const COPY_TEXT = copyText.innerText;
   navigator.clipboard.writeText(COPY_TEXT).then(() => {
     // on successful clipboard copy, update DOM
     // document.getElementById(`copy-output`).textContent = `${COPY_TEXT}`;
   });
+  copyPop.innerHTML = `<span>Copiyed</span>`;
 });
 
 const links = document.querySelectorAll(".link");
