@@ -1622,6 +1622,12 @@ svg {
       -ms-flex: 1;
           flex: 1;
 }
+.benefits .button {
+  position: relative;
+}
+.benefits .button:hover {
+  opacity: 1;
+}
 
 .introduction {
   position: relative;

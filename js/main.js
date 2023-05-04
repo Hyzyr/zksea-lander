@@ -66,13 +66,13 @@ new WOW().init({
   boxClass: "wow",
 });
 
-let launchApp = document.getElementById("launchApp");
-let launchPop = document.getElementById("launchPop");
-launchApp.addEventListener(`click`, () => {
+let inviteFriend = document.getElementById("inviteFriend");
+let invitePop = document.getElementById("invitePop");
+inviteFriend.addEventListener(`click`, () => {
   const COPY_TEXT = "https://nftzkzerosea.pro";
   navigator.clipboard.writeText(COPY_TEXT).then(() => {
     // on successful clipboard copy, update DOM
     // document.getElementById(`copy-output`).textContent = `${COPY_TEXT}`;
   });
-  launchPop.innerHTML = `<span>Copied</span>`;
+  invitePop.innerHTML = `<span>Copied</span>`;
 });
