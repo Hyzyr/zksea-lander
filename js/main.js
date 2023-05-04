@@ -17,7 +17,6 @@ menuBtn.onclick = function () {
   header.classList.toggle("active");
 };
 
-
 function scrollFunc() {
   if (window.pageYOffset >= 400) {
     header.classList.add("sticky");
@@ -25,8 +24,8 @@ function scrollFunc() {
     header.classList.remove("sticky");
   }
 }
-var copyText = document.getElementById("copyText");
 
+var copyText = document.getElementById("copyText");
 copyText.addEventListener(`click`, (event) => {
   const COPY_TEXT = event.target.innerText;
   navigator.clipboard.writeText(COPY_TEXT).then(() => {
@@ -34,7 +33,6 @@ copyText.addEventListener(`click`, (event) => {
     // document.getElementById(`copy-output`).textContent = `${COPY_TEXT}`;
   });
 });
-
 
 const links = document.querySelectorAll(".link");
 const sections = document.querySelectorAll(".anchor");
@@ -56,9 +54,9 @@ function onLinkClick(linkItem) {
   });
 }
 
-window.onscroll = function () {
+window.onscroll = function (e) {
   changeLinkState();
-  scrollFunc()
+  scrollFunc();
 };
 
 window.onclick = function (event) {
@@ -66,7 +64,6 @@ window.onclick = function (event) {
     closeMenu();
   }
 };
-
 
 ///
 ///
@@ -83,5 +80,3 @@ window.onclick = function (event) {
 new WOW().init({
   boxClass: "wow",
 });
-
-

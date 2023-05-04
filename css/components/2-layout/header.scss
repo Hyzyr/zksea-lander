@@ -256,7 +256,6 @@
       }
       &-link {
         color: $white;
-
         &:after {
           left: 0;
           top: 50%;
@@ -270,6 +269,15 @@
           &:after {
             width: 2px;
             height: 100%;
+          }
+        }
+        &.active{
+          &:after {
+            left: 0;
+            top: 50%;
+            width: 2px;
+            height: 80%;
+            transform: translateY(-50%);
           }
         }
       }

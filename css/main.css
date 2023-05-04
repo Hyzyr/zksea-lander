@@ -1123,6 +1123,7 @@ svg {
   opacity: 0;
   -webkit-transform: translateX(-50%) scale(0);
           transform: translateX(-50%) scale(0);
+  pointer-events: none;
 }
 .popUp span {
   font-size: 14px;
@@ -2279,6 +2280,14 @@ svg {
   .nav__inner-link:hover:after {
     width: 2px;
     height: 100%;
+  }
+  .nav__inner-link.active:after {
+    left: 0;
+    top: 50%;
+    width: 2px;
+    height: 80%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
   .nav__inner-buttons {
     -webkit-box-orient: vertical;
