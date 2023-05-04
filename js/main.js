@@ -35,22 +35,6 @@ copyText.addEventListener(`click`, (event) => {
   });
 });
 
-///
-///
-/// slick slider
-
-///
-///
-/// tabEvents
-
-///
-///
-///
-// WOW JS
-new WOW().init({
-  boxClass: "wow",
-});
-
 
 const links = document.querySelectorAll(".link");
 const sections = document.querySelectorAll(".anchor");
@@ -82,3 +66,22 @@ window.onclick = function (event) {
     closeMenu();
   }
 };
+
+
+///
+///
+/// slick slider
+
+///
+///
+/// tabEvents
+
+///
+///
+///
+// WOW JS
+new WOW().init({
+  boxClass: "wow",
+});
+
+
