@@ -1,4 +1,5 @@
 .hero {
+  padding: 60px 0;
   &__inner {
     display: flex;
     flex-direction: column;
@@ -554,6 +555,8 @@
 
 @mixin index-1360 {
   .hero {
+    padding: 40px 0;
+
     &__inner {
       &-list {
         flex-direction: column;
@@ -763,6 +766,8 @@
 }
 @mixin index-768 {
   .hero {
+    padding: 50px 0;
+
     &__inner {
       h1 {
         margin-bottom: 25px;
