@@ -74,5 +74,6 @@ inviteFriend.addEventListener(`click`, () => {
     // on successful clipboard copy, update DOM
     // document.getElementById(`copy-output`).textContent = `${COPY_TEXT}`;
   });
-  invitePop.innerHTML = `<span>Copied</span>`;
+  invitePop.innerHTML = `<span>Link copied</span>`;
 });
+
