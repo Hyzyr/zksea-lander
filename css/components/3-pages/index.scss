@@ -127,6 +127,11 @@
   .autoContainer {
     max-width: 1450px;
   }
+  h3{
+    &.grow{
+      flex: 1;
+    }
+  }
 }
 .introduction {
   position: relative;

@@ -37,7 +37,7 @@ copyBtn.addEventListener(`click`, () => {
     // on successful clipboard copy, update DOM
     // document.getElementById(`copy-output`).textContent = `${COPY_TEXT}`;
   });
-  copyPop.innerHTML = `<span>Copiyed</span>`;
+  copyPop.innerHTML = `<span>Copied</span>`;
 });
 
 const links = document.querySelectorAll(".link");
