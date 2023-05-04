@@ -38,6 +38,8 @@ copyBtn.addEventListener(`click`, () => {
     // document.getElementById(`copy-output`).textContent = `${COPY_TEXT}`;
   });
   copyPop.innerHTML = `<span>Copied</span>`;
+
+  setTimeout(() => (copyPop.innerHTML = `<span>Copy</span>`), 2000);
 });
 
 const links = document.querySelectorAll(".link");
