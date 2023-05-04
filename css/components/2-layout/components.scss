@@ -741,6 +741,7 @@
   transition: .3s ease;
   opacity: 0;
   transform: translateX(-50%) scale(0);
+  pointer-events: none;
   span {
     font-size: 14px;
     white-space: nowrap;

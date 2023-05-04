@@ -27,8 +27,8 @@ function scrollFunc() {
     header.classList.remove("sticky");
   }
 }
-var copyText = document.getElementById("copyText");
 
+var copyText = document.getElementById("copyText");
 copyText.addEventListener(`click`, (event) => {
   const COPY_TEXT = event.target.innerText;
   navigator.clipboard.writeText(COPY_TEXT).then(() => {
