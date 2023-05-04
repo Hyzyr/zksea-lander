@@ -77,5 +77,7 @@ inviteFriend.addEventListener(`click`, () => {
     // document.getElementById(`copy-output`).textContent = `${COPY_TEXT}`;
   });
   invitePop.innerHTML = `<span>Link copied</span>`;
+  setTimeout(() => (invitePop.innerHTML = `<span>Copy</span>`), 2000);
+
 });
 
