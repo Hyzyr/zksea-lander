@@ -1,782 +1,1068 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="images/logo-small.svg" />
+    <title>zkZeroSea | Home</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="icon" href="images/logo-small.svg" />
-  <title>zkZeroSea | Home</title>
-</head>
-
-<body>
-  <div class="main">
-    <!-- #header -->
-    <header class="header" id="header">
-      <div class="autoContainer">
-        <div class="header__inner">
-          <a href="/" class="header__inner-logo ">
-            <span class="logo">
-              <img src="images/logo.png" alt="zkZeroSea" />
-            </span>
-          </a>
-          <nav class="nav" id="menu">
-            <div class="nav__inner">
-              <div class="nav__inner-group">
-                <a href="#products" class="nav__inner-link link">Utility</a>
-                <a href="#tokenomics" class="nav__inner-link link">Tokenomics</a>
-                <a href="#roadmap" class="nav__inner-link link">
-                  Roadmap</a>
-                <a href="#" class="nav__inner-link">WhitePaper</a>
-              </div>
-              <div class="nav__inner-buttons">
-                <a href="https://nftzkzerosea.pro/" class="button button--border">
-                  <span>Connect Wallet</span>
-                </a>
-                <a href="#benefits" class="button button--primary">Claim Airdrop</a>
-              </div>
-            </div>
-          </nav>
-          <button class="burger " id="menuBtn"></button>
-        </div>
-      </div>
-    </header>
-    <!-- #header end -->
-    <!-- #hero -->
-    <section class="hero">
-      <div class="autoContainer">
-        <div class="hero__inner">
-          <h1 class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".4s">
-            World’s First
-            <span class="inlineIcon"><svg width="82" height="82" viewBox="0 0 82 82" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M16.393 40.499L6.74396 36.3489C5.36058 35.7956 4.54716 34.7927 4.30368 33.3401C4.06021 31.8876 4.45862 30.6426 5.49892 29.605L18.5718 16.5322C19.5402 15.5639 20.6815 14.8722 21.9957 14.4572C23.3099 14.0422 24.6587 13.973 26.0421 14.2497L31.4372 15.391C27.7713 19.7486 24.8496 23.7091 22.6722 27.2727C20.4947 30.8362 18.4017 35.245 16.393 40.499ZM77.3999 0.0356057C77.9532 0.0356057 78.5066 0.173942 79.06 0.450615C79.6133 0.727288 80.0975 1.07313 80.5125 1.48814C80.9275 1.90315 81.2734 2.38733 81.55 2.94067C81.8267 3.49402 81.965 4.04736 81.965 4.60071C82.2417 11.0334 80.8763 17.7081 77.8689 24.6249C74.8614 31.5417 70.6241 37.7323 65.157 43.1966C61.4219 46.9317 57.8251 49.9239 54.3667 52.1733C50.9082 54.4226 46.8273 56.5488 42.1238 58.552C41.2246 58.8978 40.3088 59.0707 39.3764 59.0707C38.444 59.0707 37.6306 58.7249 36.9361 58.0332L23.967 45.0641C23.2753 44.3725 22.9295 43.559 22.9295 42.6239C22.9295 41.6887 23.1024 40.7729 23.4482 39.8765C25.4541 35.2423 27.5818 31.1779 29.8311 27.6835C32.0805 24.1892 35.0714 20.5758 38.8037 16.8435C44.268 11.3792 50.4586 7.14195 57.3755 4.13175C64.2924 1.12155 70.9672 -0.243834 77.3999 0.0356057ZM51.0466 30.9538C52.6375 32.5447 54.5922 33.3401 56.9107 33.3401C59.2292 33.3401 61.1826 32.5447 62.7707 30.9538C64.3616 29.363 65.157 27.4096 65.157 25.0939C65.157 22.7781 64.3616 20.8234 62.7707 19.2298C61.1798 17.6389 59.2251 16.8435 56.9066 16.8435C54.588 16.8435 52.6347 17.6389 51.0466 19.2298C49.4557 20.8207 48.6603 22.7754 48.6603 25.0939C48.6603 27.4124 49.4557 29.3657 51.0466 30.9538ZM41.5013 65.6071C46.7581 63.6012 51.1849 61.5096 54.7817 59.3322C58.3785 57.1548 62.3557 54.2317 66.7133 50.563L67.7508 55.9581C68.0275 57.3415 67.9584 58.7083 67.5433 60.0584C67.1283 61.4086 66.4366 62.5665 65.4683 63.5321L52.3954 76.6049C51.3578 77.6424 50.1128 78.0228 48.6603 77.7462C47.2077 77.4695 46.2048 76.6395 45.6514 75.2561L41.5013 65.6071ZM7.78149 56.6637C10.2024 54.2566 13.149 53.0351 16.6213 52.9991C20.0935 52.9659 23.0332 54.1598 25.4403 56.5807C27.8474 59.0016 29.0509 61.9412 29.0509 65.3996C29.0509 68.858 27.8404 71.7977 25.4195 74.2186C23.6903 75.9478 20.8032 77.4349 16.7582 78.6799C12.7132 79.925 7.12715 81.0316 0 82C0.968363 74.8757 2.07506 69.3007 3.3201 65.2751C4.56514 61.2523 6.05227 58.3818 7.78149 56.6637Z"
-                  fill="url(#paint0_linear_81_17)" />
-                <defs>
-                  <linearGradient id="paint0_linear_81_17" x1="0" y1="41" x2="82" y2="41"
-                    gradientUnits="userSpaceOnUse">
-                    <stop offset="0.25" stop-color="#BAFF00" />
-                    <stop offset="0.75" stop-color="#06FFCC" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </span>
-            Zero Knowledge Cross-Chain NFT Marketplace
-          </h1>
-          <ul class="hero__inner-list">
-            <li class="hero__inner-list-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-              <span class="hero__inner-list-ico">
-                <img src="./images/arrowr-right-primary.png" alt="">
+  <body>
+    <div class="main">
+      <!-- #header -->
+      <header class="header" id="header">
+        <div class="autoContainer">
+          <div class="header__inner">
+            <a href="/" class="header__inner-logo">
+              <span class="logo">
+                <img src="images/logo.png" alt="zkZeroSea" />
               </span>
-              Mint Your NFT’s in one Blockchain & <br>
-              Sell them on <span class="text--primary">ANY</span> Blockchain
-            </li>
-            <li class="hero__inner-list-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-              <span class="hero__inner-list-ico">
-                <img src="./images/arrowr-right-primary.png" alt="">
-
+            </a>
+            <nav class="nav" id="menu">
+              <div class="nav__inner">
+                <div class="nav__inner-group">
+                  <a href="#products" class="nav__inner-link link">Utility</a>
+                  <a href="#tokenomics" class="nav__inner-link link"
+                    >Tokenomics</a
+                  >
+                  <a href="#roadmap" class="nav__inner-link link"> Roadmap</a>
+                  <a href="#" class="nav__inner-link">WhitePaper</a>
+                </div>
+                <div class="nav__inner-buttons">
+                  <a
+                    href="https://nftzkzerosea.pro/"
+                    class="button button--border"
+                  >
+                    <span>Connect Wallet</span>
+                  </a>
+                  <a href="#benefits" class="button button--primary"
+                    >Claim Airdrop</a
+                  >
+                </div>
+              </div>
+            </nav>
+            <button class="burger" id="menuBtn"></button>
+          </div>
+        </div>
+      </header>
+      <!-- #header end -->
+      <!-- #hero -->
+      <section class="hero">
+        <div class="autoContainer">
+          <div class="hero__inner">
+            <h1
+              class="wow fadeInUp"
+              data-wow-duration=".5s"
+              data-wow-delay=".4s"
+            >
+              World’s First
+              <span class="inlineIcon"
+                ><svg
+                  width="82"
+                  height="82"
+                  viewBox="0 0 82 82"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.393 40.499L6.74396 36.3489C5.36058 35.7956 4.54716 34.7927 4.30368 33.3401C4.06021 31.8876 4.45862 30.6426 5.49892 29.605L18.5718 16.5322C19.5402 15.5639 20.6815 14.8722 21.9957 14.4572C23.3099 14.0422 24.6587 13.973 26.0421 14.2497L31.4372 15.391C27.7713 19.7486 24.8496 23.7091 22.6722 27.2727C20.4947 30.8362 18.4017 35.245 16.393 40.499ZM77.3999 0.0356057C77.9532 0.0356057 78.5066 0.173942 79.06 0.450615C79.6133 0.727288 80.0975 1.07313 80.5125 1.48814C80.9275 1.90315 81.2734 2.38733 81.55 2.94067C81.8267 3.49402 81.965 4.04736 81.965 4.60071C82.2417 11.0334 80.8763 17.7081 77.8689 24.6249C74.8614 31.5417 70.6241 37.7323 65.157 43.1966C61.4219 46.9317 57.8251 49.9239 54.3667 52.1733C50.9082 54.4226 46.8273 56.5488 42.1238 58.552C41.2246 58.8978 40.3088 59.0707 39.3764 59.0707C38.444 59.0707 37.6306 58.7249 36.9361 58.0332L23.967 45.0641C23.2753 44.3725 22.9295 43.559 22.9295 42.6239C22.9295 41.6887 23.1024 40.7729 23.4482 39.8765C25.4541 35.2423 27.5818 31.1779 29.8311 27.6835C32.0805 24.1892 35.0714 20.5758 38.8037 16.8435C44.268 11.3792 50.4586 7.14195 57.3755 4.13175C64.2924 1.12155 70.9672 -0.243834 77.3999 0.0356057ZM51.0466 30.9538C52.6375 32.5447 54.5922 33.3401 56.9107 33.3401C59.2292 33.3401 61.1826 32.5447 62.7707 30.9538C64.3616 29.363 65.157 27.4096 65.157 25.0939C65.157 22.7781 64.3616 20.8234 62.7707 19.2298C61.1798 17.6389 59.2251 16.8435 56.9066 16.8435C54.588 16.8435 52.6347 17.6389 51.0466 19.2298C49.4557 20.8207 48.6603 22.7754 48.6603 25.0939C48.6603 27.4124 49.4557 29.3657 51.0466 30.9538ZM41.5013 65.6071C46.7581 63.6012 51.1849 61.5096 54.7817 59.3322C58.3785 57.1548 62.3557 54.2317 66.7133 50.563L67.7508 55.9581C68.0275 57.3415 67.9584 58.7083 67.5433 60.0584C67.1283 61.4086 66.4366 62.5665 65.4683 63.5321L52.3954 76.6049C51.3578 77.6424 50.1128 78.0228 48.6603 77.7462C47.2077 77.4695 46.2048 76.6395 45.6514 75.2561L41.5013 65.6071ZM7.78149 56.6637C10.2024 54.2566 13.149 53.0351 16.6213 52.9991C20.0935 52.9659 23.0332 54.1598 25.4403 56.5807C27.8474 59.0016 29.0509 61.9412 29.0509 65.3996C29.0509 68.858 27.8404 71.7977 25.4195 74.2186C23.6903 75.9478 20.8032 77.4349 16.7582 78.6799C12.7132 79.925 7.12715 81.0316 0 82C0.968363 74.8757 2.07506 69.3007 3.3201 65.2751C4.56514 61.2523 6.05227 58.3818 7.78149 56.6637Z"
+                    fill="url(#paint0_linear_81_17)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_81_17"
+                      x1="0"
+                      y1="41"
+                      x2="82"
+                      y2="41"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0.25" stop-color="#BAFF00" />
+                      <stop offset="0.75" stop-color="#06FFCC" />
+                    </linearGradient>
+                  </defs>
+                </svg>
               </span>
-              Supports
-              <span class="text--underline">zkSync Era,</span>
-              <span class="text--underline">Layer Zero,</span>
-              <span class="text--underline">Arbitrum,</span>
-              <span class="text--underline">Binance Chain</span>
-              & Expanding
-            </li>
-          </ul>
-          <div class="hero__inner-banner wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-            <img src="images/shapes/intro-shape.png" alt="intro-shape" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- #hero end -->
-    <!-- #benefits -->
-  
-    <section class="benefits" id="benefits">
-      <div class="autoContainer">
-        <div class="benefits__inner">
-          <div class="benefits__item wow fadeInUp" data-wow-duration="1s">
-            <div class="benefits__item-logo wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-              <img src="images/logoBorder.png" alt="zksea" />
-            </div>
-            <h3 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">
-              Double your Airdrop by
-              <span class="text--primary">Minting a Free NFT!</span>
-            </h3>
-            <p class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
-              Mint this Sea Monster NFT and double your airdrop plus keep in
-              touch with new cross-chain marketplace deployment and more!
-            </p>
-            <p class="_xlg wow fadeInUp" data-wow-duration="1s" data-wow-delay=".9s">
-              You can mint Sea Monster NFT on Arbitrum or zkSync chain. You
-              can use AnySwap Bridge to move Ether to the Arbitrum chain. To
-              move ether to zkSync use zkSync Brdge
-            </p>
-            <div class="benefits__item-footer">
-              <button class="button button--primary wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">Mint
-                Now</button>
-            </div>
-          </div>
-          <div class="benefits__item wow fadeInUp" data-wow-duration="1s">
-            <div class="benefits__item-logo wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-              <img src="images/logoBorder.png" alt="zksea" />
-            </div>
-            <h3 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-              $PEPE Holders & $ARB Airdrop wallets can claim
-              <span class="text--primary">$ZKZ now!</span>
-            </h3>
-            <p class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">
-              A total of 2,000,000,000 $ZKZ tokens are now available to be
-              claimed by those who have claimed the ARB airdrop.
-            </p>
-            <p class="_xlg wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
-              $ZKZ tokens that have not been claimed within 31 days will be
-              used for the Community Long-Term Incentive Reward Program.
-            </p>
-            <div class="benefits__item-progress wow fadeInUp" data-wow-duration="1s" data-wow-delay=".9s">
-              <span>Claimed</span>
-              <span>84,000,000,000,000</span>
-            </div>
-            <div class="benefits__item-footer">
-              <button class="button button--primary wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">Claim Air
-                Drop</button>
-              <button class="button button--primary wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.1s">Invite
-                Friend</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- #benefits end -->
-    <!-- #introduction -->
-    <section class="introduction">
-      <div class="autoContainer">
-        <div class="introduction__bg">
-          <span class="blur"></span>
-          <span class="blur"></span>
-        </div>
-        <div class="introduction__inner">
-          <div class="introduction__inner-frame wow fadeInUp" data-wow-duration="1s">
-            <img src="images/shapes/introdactionShape.png" alt="frame" class="_hideMob" />
-            <img src="./images/shapes/introduction-mobile-shape.png" alt="" class="_hideDesk">
-          </div>
-          <div class="introduction__inner-header wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">
-            <h3 class="title">INTRODUCTION</h3>
-          </div>
-          <p class="_xlg wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
-            zkZeroSea - A revolutionary Zero Knowledge Cross-Chain NFT
-            Marketplace Ecosystem  that seamlessly allows users to mint NFT on
-            <span class="text--primary">
-              ANY
-            </span> Blockchain and sell them on <span class="text--primary">
-              ANY
-            </span> Blockchain.
-          </p>
-          <div class="introduction__inner-row">
-            <ul class="introduction__list wow fadeInUp" data-wow-duration="1s" data-wow-delay=".9s">
-              <li class="introduction__list-item">
-                <i class="icon icon--right"></i>
-                LIVE NFT Marketplace on ZkSync Era Chain , Arbitrum & Binance
-                Chain
+              Zero Knowledge Cross-Chain NFT Marketplace
+            </h1>
+            <ul class="hero__inner-list">
+              <li
+                class="hero__inner-list-item wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay=".5s"
+              >
+                <span class="hero__inner-list-ico">
+                  <img src="./images/arrowr-right-primary.png" alt="" />
+                </span>
+                Mint Your NFT’s in one Blockchain & <br />
+                Sell them on <span class="text--primary">ANY</span> Blockchain
               </li>
-              <li class="introduction__list-item">
-                <i class="icon icon--right"></i>
-                PlayToEarn Games
-              </li>
-              <li class="introduction__list-item">
-                <i class="icon icon--right"></i>
-                Mint NFT on Arbtirum & sell them on Binance chain and
-                ViceVersa 
-              </li>
-              <li class="introduction__list-item">
-                <i class="icon icon--right"></i>
-                Real Yield Reward 
-              </li>
-              <li class="introduction__list-item">
-                <i class="icon icon--right"></i>
-                zkSync Era Wallet 
+              <li
+                class="hero__inner-list-item wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay=".5s"
+              >
+                <span class="hero__inner-list-ico">
+                  <img src="./images/arrowr-right-primary.png" alt="" />
+                </span>
+                Supports
+                <span class="text--underline">zkSync Era,</span>
+                <span class="text--underline">Layer Zero,</span>
+                <span class="text--underline">Arbitrum,</span>
+                <span class="text--underline">Binance Chain</span>
+                & Expanding
               </li>
             </ul>
-            <ul class="introduction__list wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
-              <li class="introduction__list-item">
-                <i class="icon icon--right"></i>
-                NFT Staking
-              </li>
-              <li class="introduction__list-item">
-                <i class="icon icon--right"></i>
-                AI powered Text to Image Generator
-              </li>
-              <li class="introduction__list-item">
-                <i class="icon icon--right"></i>
-                zkZero Dao
-              </li>
-              <li class="introduction__list-item">
-                <i class="icon icon--right"></i>
-                AI Powered NFT Generator
-              </li>
-              <li class="introduction__list-item">
-                <i class="icon icon--right"></i>
-                zkSync Swap
-              </li>
-            </ul>
+            <div
+              class="hero__inner-banner wow fadeInUp"
+              data-wow-duration="1s"
+              data-wow-delay=".6s"
+            >
+              <img src="images/shapes/intro-shape.png" alt="intro-shape" />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- #introduction end -->
+      </section>
+      <!-- #hero end -->
+      <!-- #benefits -->
 
-    <div class="anchor" id="products"></div>
-    <!-- #products start-->
-    <section class="products" id="products">
-      <div class="autoContainer">
-        <div class="products__inner">
-          <h2 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-            ZkZeroSea Products
-          </h2>
-          <div class="products__inner-items">
-            <div class="productsItem wow fadeInUp" data-wow-duration="1s">
-              <div class="productsItem__image wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                <div class="ratioImage">
-                  <img src="./images/products/product-2.png" alt="">
-                </div>
+      <section class="benefits" id="benefits">
+        <div class="autoContainer">
+          <div class="benefits__inner">
+            <div class="benefits__item wow fadeInUp" data-wow-duration="1s">
+              <div
+                class="benefits__item-logo wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay=".6s"
+              >
+                <img src="images/logoBorder.png" alt="zksea" />
               </div>
-              <div class="productsItem__content wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                <div class="productsItem__content-info">
-                  <h4>
-                    Cross Chain NFT Marketplace
-                  </h4>
-                  <p>
-                    World's First Cross-Chain Zero knowledge NFT Marketplace where users can mint NFT in one blockchain
-                    and sell them on ANY blockchain in 1-Click. This feature expands and enables seamless transfer of
-                    assets and transactions across different blockchains. Presently supports Arbtrum and Binance chain.
-                    Plans to expand to zkSync Era when zkSync supports Layer Zero endpoints and other major blockchains.
-                  </p>
-                </div>
-                <a href="https://nftzkzerosea.pro" class="button button--border">
-                  <span>Explore ZkZeroSea</span>
-                  <div class="button__ico">
-                    <img src="./images/arrowRightShape.png" alt="">
-                  </div>
-
-                </a>
+              <h3
+                class="wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay=".7s"
+              >
+                Double your Airdrop by
+                <span class="text--primary">Minting a Free NFT!</span>
+              </h3>
+              <p
+                class="wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay=".8s"
+              >
+                Mint this Sea Monster NFT and double your airdrop plus keep in
+                touch with new cross-chain marketplace deployment and more!
+              </p>
+              <p
+                class="_xlg wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay=".9s"
+              >
+                You can mint Sea Monster NFT on Arbitrum or zkSync chain. You
+                can use AnySwap Bridge to move Ether to the Arbitrum chain. To
+                move ether to zkSync use zkSync Brdge
+              </p>
+              <div class="benefits__item-footer">
+                <button
+                  class="button button--primary wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay="1s"
+                >
+                  Mint Now
+                </button>
               </div>
             </div>
-            <div class="productsItem wow fadeInUp" data-wow-duration="1s">
-              <div class="productsItem__content wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                <div class="productsItem__content-info">
-                  <h4>
-                    NFT Marketplace on zkSync, Arbitrum & Binance Chain
-                  </h4>
-                  <p>
-                    Develop Your Own NFT Marketplace like OpenSea but with more features.
-                  </p>
-                  <p>
-                    Mint NFT on one blockchain and sell on ANY blockchain and vice versa.
-                  </p>
-                </div>
-                <a href="https://nftzkzerosea.pro" class="button button--border">
-                  <span>Explore ZkZeroSea</span>
-                  <div class="button__ico">
-                    <img src="./images/arrowRightShape.png" alt="">
-                  </div>
-                </a>
+            <div class="benefits__item wow fadeInUp" data-wow-duration="1s">
+              <div
+                class="benefits__item-logo wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay=".5s"
+              >
+                <img src="images/logoBorder.png" alt="zksea" />
               </div>
-              <div class="productsItem__image wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                <div class="ratioImage">
-                  <img src="./images/products/product-3.png" alt="">
+              <h3
+                class="wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay=".6s"
+              >
+                $PEPE Holders & $ARB Airdrop wallets can claim
+                <span class="text--primary">$ZKZ now!</span>
+              </h3>
+              <p
+                class="wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay=".7s"
+              >
+                A total of 2,000,000,000 $ZKZ tokens are now available to be
+                claimed by those who have claimed the ARB airdrop.
+              </p>
+              <p
+                class="_xlg wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay=".8s"
+              >
+                $ZKZ tokens that have not been claimed within 31 days will be
+                used for the Community Long-Term Incentive Reward Program.
+              </p>
+              <div
+                class="benefits__item-progress wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay=".9s"
+              >
+                <span>Claimed</span>
+                <span>84,000,000,000,000</span>
+              </div>
+              <div class="benefits__item-footer">
+                <button
+                  class="button button--primary wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay="1s"
+                >
+                  Claim Air Drop
+                </button>
+                <button
+                  class="button button--primary wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay="1.1s"
+                >
+                  Invite Friend
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #benefits end -->
+      <!-- #introduction -->
+      <section class="introduction">
+        <div class="autoContainer">
+          <div class="introduction__bg">
+            <span class="blur"></span>
+            <span class="blur"></span>
+          </div>
+          <div class="introduction__inner">
+            <div
+              class="introduction__inner-frame wow fadeInUp"
+              data-wow-duration="1s"
+            >
+              <img
+                src="images/shapes/introdactionShape.png"
+                alt="frame"
+                class="_hideMob"
+              />
+              <img
+                src="./images/shapes/introduction-mobile-shape.png"
+                alt=""
+                class="_hideDesk"
+              />
+            </div>
+            <div
+              class="introduction__inner-header wow fadeInUp"
+              data-wow-duration="1s"
+              data-wow-delay=".7s"
+            >
+              <h3 class="title">INTRODUCTION</h3>
+            </div>
+            <p
+              class="_xlg wow fadeInUp"
+              data-wow-duration="1s"
+              data-wow-delay=".8s"
+            >
+              zkZeroSea - A revolutionary Zero Knowledge Cross-Chain NFT
+              Marketplace Ecosystem  that seamlessly allows users to mint NFT on
+              <span class="text--primary"> ANY </span> Blockchain and sell them
+              on <span class="text--primary"> ANY </span> Blockchain.
+            </p>
+            <div class="introduction__inner-row">
+              <ul
+                class="introduction__list wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay=".9s"
+              >
+                <li class="introduction__list-item">
+                  <i class="icon icon--right"></i>
+                  LIVE NFT Marketplace on ZkSync Era Chain , Arbitrum & Binance
+                  Chain
+                </li>
+                <li class="introduction__list-item">
+                  <i class="icon icon--right"></i>
+                  PlayToEarn Games
+                </li>
+                <li class="introduction__list-item">
+                  <i class="icon icon--right"></i>
+                  Mint NFT on Arbtirum & sell them on Binance chain and
+                  ViceVersa 
+                </li>
+                <li class="introduction__list-item">
+                  <i class="icon icon--right"></i>
+                  Real Yield Reward 
+                </li>
+                <li class="introduction__list-item">
+                  <i class="icon icon--right"></i>
+                  zkSync Era Wallet 
+                </li>
+              </ul>
+              <ul
+                class="introduction__list wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay="1s"
+              >
+                <li class="introduction__list-item">
+                  <i class="icon icon--right"></i>
+                  NFT Staking
+                </li>
+                <li class="introduction__list-item">
+                  <i class="icon icon--right"></i>
+                  AI powered Text to Image Generator
+                </li>
+                <li class="introduction__list-item">
+                  <i class="icon icon--right"></i>
+                  zkZero Dao
+                </li>
+                <li class="introduction__list-item">
+                  <i class="icon icon--right"></i>
+                  AI Powered NFT Generator
+                </li>
+                <li class="introduction__list-item">
+                  <i class="icon icon--right"></i>
+                  zkSync Swap
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #introduction end -->
+
+      <div class="anchor" id="products"></div>
+      <!-- #products start-->
+      <section class="products" id="products">
+        <div class="autoContainer">
+          <div class="products__inner">
+            <h2
+              class="wow fadeInUp"
+              data-wow-duration="1s"
+              data-wow-delay=".5s"
+            >
+              ZkZeroSea Products
+            </h2>
+            <div class="products__inner-items">
+              <div class="productsItem wow fadeInUp" data-wow-duration="1s">
+                <div
+                  class="productsItem__image wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".5s"
+                >
+                  <div class="ratioImage">
+                    <img src="./images/products/product-2.png" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="productsItem__content wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".6s"
+                >
+                  <div class="productsItem__content-info">
+                    <h4>Cross Chain NFT Marketplace</h4>
+                    <p>
+                      World's First Cross-Chain Zero knowledge NFT Marketplace
+                      where users can mint NFT in one blockchain and sell them
+                      on ANY blockchain in 1-Click. This feature expands and
+                      enables seamless transfer of assets and transactions
+                      across different blockchains. Presently supports Arbtrum
+                      and Binance chain. Plans to expand to zkSync Era when
+                      zkSync supports Layer Zero endpoints and other major
+                      blockchains.
+                    </p>
+                  </div>
+                  <a
+                    href="https://nftzkzerosea.pro"
+                    class="button button--border"
+                  >
+                    <span>Explore ZkZeroSea</span>
+                    <div class="button__ico">
+                      <img src="./images/arrowRightShape.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="productsItem wow fadeInUp" data-wow-duration="1s">
+                <div
+                  class="productsItem__content wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".6s"
+                >
+                  <div class="productsItem__content-info">
+                    <h4>NFT Marketplace on zkSync, Arbitrum & Binance Chain</h4>
+                    <p>
+                      Develop Your Own NFT Marketplace like OpenSea but with
+                      more features.
+                    </p>
+                    <p>
+                      Mint NFT on one blockchain and sell on ANY blockchain and
+                      vice versa.
+                    </p>
+                  </div>
+                  <a
+                    href="https://nftzkzerosea.pro"
+                    class="button button--border"
+                  >
+                    <span>Explore ZkZeroSea</span>
+                    <div class="button__ico">
+                      <img src="./images/arrowRightShape.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="productsItem__image wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".5s"
+                >
+                  <div class="ratioImage">
+                    <img src="./images/products/product-3.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="productsItem wow fadeInUp" data-wow-duration="1s">
+                <div
+                  class="productsItem__image wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".5s"
+                >
+                  <div class="ratioImage">
+                    <img src="./images/products/product-1.png" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="productsItem__content wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".6s"
+                >
+                  <div class="productsItem__content-info">
+                    <h4>zkZeroSea Wallet</h4>
+                    <ul>
+                      <li>Download app</li>
+                      <li>
+                        Ultimate zkSync Era wallet that offers a seamless
+                        experience for managing your digital assets.
+                      </li>
+                      <li>100% decentralized, Store NFT’s, Swap, No KYC.</li>
+                      <li>
+                        Supports IOS & Android. Download from App Store or Play
+                        Store.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="productsItem__content-row">
+                    <a href="#" class="button button--primary"> App Store </a>
+                    <a href="#" class="button button--primary"> Play store </a>
+                  </div>
+                </div>
+              </div>
+              <div class="productsItem wow fadeInUp" data-wow-duration="1s">
+                <div
+                  class="productsItem__content wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".6s"
+                >
+                  <div class="productsItem__content-info">
+                    <h4>Multi-AI Products</h4>
+                    <p>
+                      Unlock your full creative potential zkZeroSea apps to make
+                      your life and work more beautiful:
+                    </p>
+                    <p>
+                      <span class="icon icon--right-arrow2"> </span>
+                      Text to Image Generator: Turn your words into a unique
+                      piece of digital art.
+                    </p>
+                    <p>
+                      <span class="icon icon--right-arrow2"> </span>
+                      AI-powered NFT Generator: Create an NFT with simple
+                      keywords and allows you to take full ownership.
+                    </p>
+                  </div>
+                  <a href="#" class="button button--border">
+                    <span>Explore ZkZeroSea</span>
+                    <div class="button__ico">
+                      <img src="./images/arrowRightShape.png" alt="" />
+                    </div>
+                    <div class="popUp">
+                      <span> Coming Soon </span>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="productsItem__image wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".5s"
+                >
+                  <div class="ratioImage">
+                    <img src="./images/products/product-4.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="productsItem wow fadeInUp" data-wow-duration="1s">
+                <div
+                  class="productsItem__image wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".5s"
+                >
+                  <div class="ratioImage">
+                    <img src="./images/products/product-5.png" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="productsItem__content wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".6s"
+                >
+                  <div class="productsItem__content-info">
+                    <h4>Play2Earn Game</h4>
+                    <p>Where Game meets AI NFTs.</p>
+                    <p>
+                      Create your own NFT character and embark on a journey of
+                      adventure and earning in an immersive gaming experience,
+                      powered by advanced AI technology and GameFi.
+                    </p>
+                  </div>
+                  <a href="#" class="button button--border">
+                    <span>Explore ZkZeroSea</span>
+                    <div class="button__ico">
+                      <img src="./images/arrowRightShape.png" alt="" />
+                    </div>
+                    <div class="popUp">
+                      <span> Coming Soon </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="productsItem wow fadeInUp" data-wow-duration="1s">
+                <div
+                  class="productsItem__content wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".6s"
+                >
+                  <div class="productsItem__content-info">
+                    <h4>Real Yield Reward</h4>
+                    <p>Everyone Profits</p>
+                    <p>
+                      Our community-driven project puts you, our holders, in
+                      control of your earnings and empower our users with
+                      profitable yields.
+                    </p>
+                    <p>
+                      50% of the NFT Marketplace revenue is divided among token
+                      holders.
+                    </p>
+                  </div>
+                  <a
+                    href="https://nftzkzerosea.pro/"
+                    class="button button--border"
+                  >
+                    <span>Explore ZkZeroSea</span>
+                    <div class="button__ico">
+                      <img src="./images/arrowRightShape.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="productsItem__image wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".5s"
+                >
+                  <div class="ratioImage">
+                    <img src="./images/products/product-6.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="productsItem wow fadeInUp" data-wow-duration="1s">
+                <div
+                  class="productsItem__image wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".5s"
+                >
+                  <div class="ratioImage">
+                    <img src="./images/products/product-7.png" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="productsItem__content wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".6s"
+                >
+                  <div class="productsItem__content-info">
+                    <h4>NFT Staking</h4>
+                    <p>Stake your way to Riches</p>
+                    <p>
+                      Our staking platform offers the highest APR levels in the
+                      market, up to 100%. The more NFT's you stake, the more you
+                      earn
+                    </p>
+                  </div>
+                  <a href="#" class="button button--border">
+                    <span>Explore ZkZeroSea</span>
+                    <div class="button__ico">
+                      <img src="./images/arrowRightShape.png" alt="" />
+                    </div>
+                    <div class="popUp">
+                      <span> Coming Soon </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="productsItem wow fadeInUp" data-wow-duration="1s">
+                <div
+                  class="productsItem__content wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".6s"
+                >
+                  <div class="productsItem__content-info">
+                    <h4>ZkZero  Swap</h4>
+                    <p>
+                      Trade any crypto on zkSync Era. No registration, no
+                      hassle. Best Prices in DeFi‍ for Traders & dApps. Swap,
+                      Save, Earn. Only with zkZero Swap
+                    </p>
+                  </div>
+                  <a href="#" class="button button--border">
+                    <span>Explore ZkZeroSea</span>
+                    <div class="button__ico">
+                      <img src="./images/arrowRightShape.png" alt="" />
+                    </div>
+                    <div class="popUp">
+                      <span> Coming Soon </span>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="productsItem__image wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".5s"
+                >
+                  <div class="ratioImage">
+                    <img src="./images/products/product-8.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="productsItem wow fadeInUp" data-wow-duration="1s">
+                <div
+                  class="productsItem__image wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".5s"
+                >
+                  <div class="ratioImage">
+                    <img src="./images/products/product-9.png" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="productsItem__content wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".6s"
+                >
+                  <div class="productsItem__content-info">
+                    <h4>ZkZero Earn</h4>
+                    <p>
+                      Earn Passive Income by staking your $ZKZ tokens and earn
+                      upto 230% APY.  Secret engine of wealth creation is at
+                      work: compound interest. You’ll earn compound interest
+                      that can supercharge your returns over time.
+                    </p>
+                  </div>
+                  <a href="#" class="button button--border">
+                    <span>Explore ZkZeroSea</span>
+                    <div class="button__ico">
+                      <img src="./images/arrowRightShape.png" alt="" />
+                    </div>
+                    <div class="popUp">
+                      <span> Coming Soon </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="productsItem wow fadeInUp" data-wow-duration="1s">
+                <div
+                  class="productsItem__content wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".6s"
+                >
+                  <div class="productsItem__content-info">
+                    <h4>ZkZero Dao</h4>
+                    <p>
+                      The zkZeroSea community governs itself via the zkZero DAO,
+                      the decentralized governance framework that supports the
+                      Ecosystem Fund.
+                    </p>
+                    <p>
+                      You make the rules and enforce them. Dispute resolution
+                      built-in so the herd can live in harmony.
+                    </p>
+                  </div>
+                  <a href="#" class="button button--border">
+                    <span>Explore ZkZeroSea</span>
+                    <div class="button__ico">
+                      <img src="./images/arrowRightShape.png" alt="" />
+                    </div>
+                    <div class="popUp">
+                      <span> Coming Soon </span>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="productsItem__image wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".5s"
+                >
+                  <div class="ratioImage">
+                    <img src="./images/products/product-10.png" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="productsItem wow fadeInUp" data-wow-duration="1s">
-              <div class="productsItem__image wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                <div class="ratioImage">
-                  <img src="./images/products/product-1.png" alt="">
+          </div>
+        </div>
+      </section>
+      <!-- #products end-->
+
+      <div class="bg">
+        <div class="bg__image">
+          <img src="images/bg/toke-bg.png" alt="" />
+        </div>
+        <div class="anchor" id="tokenomics"></div>
+        <!-- #tokenomics -->
+        <section class="tokenomics" id="tokenomics">
+          <div class="autoContainer">
+            <div class="tokenomics__inner">
+              <h3
+                class="title wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay=".5s"
+              >
+                Tokenomics
+              </h3>
+              <div class="tokenomics__inner-banner">
+                <div
+                  class="tokenomics__banner wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".6s"
+                >
+                  <img src="images/tokenomics.png" alt="tokenomics" />
+                </div>
+                <div
+                  class="tokenomics__footer wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".7s"
+                >
+                  <strong>Contact Address :</strong>
+                  <span class="text--primary" id="copyText">
+                    0xc60dEe4852eE6190CC440e87fC06796eC5ed4bB0
+                  </span>
                 </div>
               </div>
-              <div class="productsItem__content wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                <div class="productsItem__content-info">
-                  <h4>
-                    zkZeroSea Wallet
-                  </h4>
+              <div class="tokenomics__inner-list">
+                <div
+                  class="tokenomics__inner-list-header wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".6s"
+                >
+                  <div class="tokenomics__inner-list-header-group">
+                    <strong>Name:</strong>
+                    <span class="text--primary">zkZeroSea</span>
+                  </div>
+                  <div class="tokenomics__inner-list-header-group">
+                    <strong>Symbol:</strong>
+                    <span class="text--primary">ZKZ</span>
+                  </div>
+                  <div class="tokenomics__inner-list-header-group">
+                    <strong>Blockchain:</strong>
+                    <span class="text--primary"> zkSync Era Chain</span>
+                  </div>
+                </div>
+                <div
+                  class="tokenomics__inner-list-item wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".65s"
+                >
+                  <span class="text--primary">25% </span>
+                  <span> CEX & Dex LP </span>
+                </div>
+                <div
+                  class="tokenomics__inner-list-item wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".67s"
+                >
+                  <span class="text--primary">25% </span>
+                  <span>  Staking Rewards </span>
+                </div>
+                <div
+                  class="tokenomics__inner-list-item wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".7s"
+                >
+                  <span class="text--primary">20% </span>
+                  <span>   Airdrop </span>
+                </div>
+                <div
+                  class="tokenomics__inner-list-item wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".75s"
+                >
+                  <span class="text--primary">15% </span>
+                  <span>   Marketing</span>
+                </div>
+                <div
+                  class="tokenomics__inner-list-item wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".77s"
+                >
+                  <span class="text--primary">10% </span>
+                  <span>   Team (Locked 6 months)</span>
+                </div>
+                <div
+                  class="tokenomics__inner-list-item wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".79s"
+                >
+                  <span class="text--primary">5% </span>
+                  <span>   Floating Liquidity</span>
+                </div>
+                <div
+                  class="tokenomics__footer wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".8s"
+                >
                   <ul>
+                    <li><small>Taxes</small></li>
                     <li>
-                      Download app
+                      <span class="text--primary">3% Buy Tax:</span>
                     </li>
                     <li>
-                      Ultimate zkSync Era wallet that offers a seamless experience for managing your digital assets.
-                    </li>
-                    <li>
-                      100% decentralized, Store NFT’s, Swap, No KYC.
-                    </li>
-                    <li>
-                      Supports IOS & Android. Download from App Store or Play Store.
+                      <span class="text--primary">3% Sell Tax: </span>
                     </li>
                   </ul>
                 </div>
-                <div class="productsItem__content-row">
-                  <a href="#" class="button button--primary">
-                    App Store
-                  </a>
-                  <a href="#" class="button button--primary">
-                    Play store
-                  </a>
-                </div>
               </div>
             </div>
-            <div class="productsItem wow fadeInUp" data-wow-duration="1s">
-              <div class="productsItem__content wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                <div class="productsItem__content-info">
-                  <h4>
-                    Multi-AI Products
-                  </h4>
-                  <p>
-                    Unlock your full creative potential zkZeroSea apps to make your life and work more beautiful:
-                  </p>
-                  <p>
-                    <span class="icon icon--right-arrow2">
-                    </span>
-                    Text to Image Generator: Turn your words into a unique piece of digital art.
-                  </p>
-                  <p>
-                    <span class="icon icon--right-arrow2">
-                    </span>
-                    AI-powered NFT Generator: Create an NFT with simple keywords and allows you to take full ownership.
-                  </p>
-                </div>
-                <a href="#" class="button button--border">
-                  <span>Explore ZkZeroSea</span>
-                  <div class="button__ico">
-                    <img src="./images/arrowRightShape.png" alt="">
+          </div>
+        </section>
+        <!-- #tokenomics end -->
+        <!-- #roadmap -->
+        <div class="anchor" id="roadmap"></div>
+        <section class="roadmap" id="roadmap">
+          <div class="autoContainer">
+            <div class="roadmap__inner">
+              <h3
+                class="title wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay=".5s"
+              >
+                Roadmap
+              </h3>
+              <div class="roadmap__inner-row">
+                <div
+                  class="roadmap__inner-item wow fadeInUp"
+                  data-wow-duration="1s"
+                >
+                  <div class="roadmap-title">
+                    <h5>Prelaunch</h5>
+                    <div class="roadmap-title-bg">
+                      <img src="images/shapes/rodamap-title.png" alt="shape" />
+                    </div>
                   </div>
-                  <div class="popUp">
-                    <span>
-                      Coming Soon
-                    </span>
-                  </div>
-                </a>
-              </div>
-              <div class="productsItem__image wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                <div class="ratioImage">
-                  <img src="./images/products/product-4.png" alt="">
+                  <ul>
+                    <li>
+                      Launch NFT Marketplace on zkSync, Arbitrum & Binance Chain
+                      testnets
+                    </li>
+                    <li>
+                      Launch Cross-Chain NFT Marketplace on Arbitrum & Binance
+                      Chain
+                    </li>
+                    <li>Release zkSync Wallet Mobile App on Android & IOS</li>
+                    <li>
+                      Conduct security audits and tests to ensure the protocol's
+                      integrity and robustness
+                    </li>
+                    <li>Airdrop Campaign</li>
+                    <li>Free NFT MInt Campaign</li>
+                  </ul>
                 </div>
-              </div>
-            </div>
-            <div class="productsItem wow fadeInUp" data-wow-duration="1s">
-              <div class="productsItem__image wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                <div class="ratioImage">
-                  <img src="./images/products/product-5.png" alt="">
-                </div>
-              </div>
-              <div class="productsItem__content wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                <div class="productsItem__content-info">
-                  <h4>
-                    Play2Earn Game
-                  </h4>
-                  <p>
-                    Where Game meets AI NFTs.
-                  </p>
-                  <p>
-                    Create your own NFT character and embark on a journey of adventure and earning in an immersive
-                    gaming experience, powered by advanced AI technology and GameFi.
-                  </p>
-                </div>
-                <a href="#" class="button button--border">
-                  <span>Explore ZkZeroSea</span>
-                  <div class="button__ico">
-                    <img src="./images/arrowRightShape.png" alt="">
+                <div
+                  class="roadmap__inner-item wow fadeInUp"
+                  data-wow-duration="1s"
+                >
+                  <div class="roadmap-title">
+                    <h5>Launch </h5>
+                    <div class="roadmap-title-bg">
+                      <img src="images/shapes/rodamap-title.png" alt="shape" />
+                    </div>
                   </div>
-                  <div class="popUp">
-                    <span>
-                      Coming Soon
-                    </span>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="productsItem wow fadeInUp" data-wow-duration="1s">
-              <div class="productsItem__content wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                <div class="productsItem__content-info">
-                  <h4>
-                    Real Yield Reward
-                  </h4>
-                  <p>
-                    Everyone Profits
-                  </p>
-                  <p>
-                    Our community-driven project puts you, our holders, in control of your earnings and empower our
-                    users with profitable yields.
-                  </p>
-                  <p>
-                    50% of the NFT Marketplace revenue is divided among token holders.
-                  </p>
+                  <ul>
+                    <li>
+                      Launch Cross-Chain NFT Marketplace on Arbitrum, Binance
+                      Chain
+                    </li>
+                    <li>
+                      Launch NFT Marketplace on zkSync Era, Arbitrum & Binance
+                      Chain.
+                    </li>
+                    <li>Launch $ZKZ Token</li>
+                    <li>Global Marketing Campaign</li>
+                    <li>CMC & CG Listing</li>
+                    <li>DEX Listing</li>
+                    <li>
+                      Encourage early adoption of the protocol among developers
+                      and users
+                    </li>
+                  </ul>
                 </div>
-                <a href="https://nftzkzerosea.pro/" class="button button--border">
-                  <span>Explore ZkZeroSea</span>
-                  <div class="button__ico">
-                    <img src="./images/arrowRightShape.png" alt="">
+                <div
+                  class="roadmap__inner-item wow fadeInUp"
+                  data-wow-duration="1s"
+                >
+                  <div class="roadmap-title">
+                    <h5>Growth</h5>
+                    <div class="roadmap-title-bg">
+                      <img src="images/shapes/rodamap-title.png" alt="shape" />
+                    </div>
                   </div>
-                </a>
-              </div>
-              <div class="productsItem__image wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                <div class="ratioImage">
-                  <img src="./images/products/product-6.png" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="productsItem wow fadeInUp" data-wow-duration="1s">
-              <div class="productsItem__image wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                <div class="ratioImage">
-                  <img src="./images/products/product-7.png" alt="">
-                </div>
-              </div>
-              <div class="productsItem__content wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                <div class="productsItem__content-info">
-                  <h4>
-                    NFT Staking
-                  </h4>
-                  <p>
-                    Stake your way to Riches
-                  </p>
-                  <p>
-                    Our staking platform offers the highest APR levels in the market, up to 100%. The more NFT's you
-                    stake, the more you earn
-                  </p>
-                </div>
-                <a href="#" class="button button--border">
-                  <span>Explore ZkZeroSea</span>
-                  <div class="button__ico">
-                    <img src="./images/arrowRightShape.png" alt="">
-                  </div>
-                  <div class="popUp">
-                    <span>
-                      Coming Soon
-                    </span>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="productsItem wow fadeInUp" data-wow-duration="1s">
-              <div class="productsItem__content wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                <div class="productsItem__content-info">
-                  <h4>
-                    ZkZero  Swap
-                  </h4>
-                  <p>
-                    Trade any crypto on zkSync Era. No registration, no hassle. Best Prices in DeFi‍ for Traders &
-                    dApps. Swap, Save, Earn. Only with zkZero Swap
-                  </p>
-                </div>
-                <a href="#" class="button button--border">
-                  <span>Explore ZkZeroSea</span>
-                  <div class="button__ico">
-                    <img src="./images/arrowRightShape.png" alt="">
-                  </div>
-                  <div class="popUp">
-                    <span>
-                      Coming Soon
-                    </span>
-                  </div>
-                </a>
-              </div>
-              <div class="productsItem__image wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                <div class="ratioImage">
-                  <img src="./images/products/product-8.png" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="productsItem wow fadeInUp" data-wow-duration="1s">
-              <div class="productsItem__image wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                <div class="ratioImage">
-                  <img src="./images/products/product-9.png" alt="">
-                </div>
-              </div>
-              <div class="productsItem__content wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                <div class="productsItem__content-info">
-                  <h4>
-                    ZkZero Earn
-                  </h4>
-                  <p>
-                    Earn Passive Income by staking your $ZKZ tokens and earn upto 230% APY.  Secret engine of wealth
-                    creation is at work: compound interest. You’ll earn compound interest that can supercharge your
-                    returns over time.
-                  </p>
-                </div>
-                <a href="#" class="button button--border">
-                  <span>Explore ZkZeroSea</span>
-                  <div class="button__ico">
-                    <img src="./images/arrowRightShape.png" alt="">
-                  </div>
-                  <div class="popUp">
-                    <span>
-                      Coming Soon
-                    </span>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="productsItem wow fadeInUp" data-wow-duration="1s">
-              <div class="productsItem__content wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                <div class="productsItem__content-info">
-                  <h4>
-                    ZkZero Dao
-                  </h4>
-                  <p>
-                    The zkZeroSea community governs itself via the zkZero DAO, the decentralized governance framework
-                    that supports the Ecosystem Fund.
-                  </p>
-                  <p>
-                    You make the rules and enforce them. Dispute resolution built-in so the herd can live in harmony.
-                  </p>
-                </div>
-                <a href="#" class="button button--border">
-                  <span>Explore ZkZeroSea</span>
-                  <div class="button__ico">
-                    <img src="./images/arrowRightShape.png" alt="">
-                  </div>
-                  <div class="popUp">
-                    <span>
-                      Coming Soon
-                    </span>
-                  </div>
-                </a>
-              </div>
-              <div class="productsItem__image wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                <div class="ratioImage">
-                  <img src="./images/products/product-10.png" alt="">
+                  <ul>
+                    <li>Top Tier Exchange Listing</li>
+                    <li>Cross chain NFT Marketplace on Ether</li>
+                    <li>Cross chain NFT Marketplace on Polygon</li>
+                    <li>Cross chain NFT Marketplace on Optimism</li>
+                    <li>Release AI NFT Generator app</li>
+                    <li>Release Play2Earn Minigame</li>
+                    <li>Release Text To Image Beta Version</li>
+                    <li>NFT Staking</li>
+                    <li>$ZKZ Staking</li>
+                    <li>Release zkZero Dao</li>
+                    <li>Release zkZero  Swap</li>
+                    <li>Massive marketing campaign</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
+        <!-- #roadmap end -->
       </div>
-    </section>
-    <!-- #products end-->
 
-    <div class="bg">
-      <div class="bg__image">
-        <img src="images/bg/toke-bg.png" alt="" />
-      </div>
-      <div class="anchor" id="tokenomics">
-      </div>
-      <!-- #tokenomics -->
-      <section class="tokenomics" id="tokenomics">
-        <div class="autoContainer">
-          <div class="tokenomics__inner">
-            <h3 class="title wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">Tokenomics</h3>
-            <div class="tokenomics__inner-banner">
-              <div class="tokenomics__banner wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                <img src="images/tokenomics.png" alt="tokenomics" />
-              </div>
-              <div class="tokenomics__footer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">
-                <strong>Contact Address :</strong>
-                <span class="text--primary" id="copyText">
-                  0xc60dEe4852eE6190CC440e87fC06796eC5ed4bB0
-                </span>
-              </div>
-            </div>
-            <div class="tokenomics__inner-list">
-              <div class="tokenomics__inner-list-header wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                <div class="tokenomics__inner-list-header-group">
-                  <strong>Name:</strong>
-                  <span class="text--primary">zkZeroSea</span>
-                </div>
-                <div class="tokenomics__inner-list-header-group">
-                  <strong>Symbol:</strong>
-                  <span class="text--primary">ZKZ</span>
-                </div>
-                <div class="tokenomics__inner-list-header-group">
-                  <strong>Blockchain:</strong>
-                  <span class="text--primary"> zkSync Era Chain</span>
-                </div>
-              </div>
-              <div class="tokenomics__inner-list-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".65s">
-                <span class="text--primary">25% </span>
-                <span> CEX & Dex LP </span>
-              </div>
-              <div class="tokenomics__inner-list-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".67s">
-                <span class="text--primary">25% </span>
-                <span>  Staking Rewards </span>
-              </div>
-              <div class="tokenomics__inner-list-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">
-                <span class="text--primary">20% </span>
-                <span>   Airdrop </span>
-              </div>
-              <div class="tokenomics__inner-list-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".75s">
-                <span class="text--primary">15% </span>
-                <span>   Marketing</span>
-              </div>
-              <div class="tokenomics__inner-list-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".77s">
-                <span class="text--primary">10% </span>
-                <span>   Team (Locked 6 months)</span>
-              </div>
-              <div class="tokenomics__inner-list-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".79s">
-                <span class="text--primary">5% </span>
-                <span>   Floating Liquidity</span>
-              </div>
-              <div class="tokenomics__footer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
-                <ul>
-                  <li><small>Taxes</small></li>
-                  <li>
-                    <span class="text--primary">3% Buy Tax:</span>
-                  </li>
-                  <li>
-                    <span class="text--primary">3% Sell Tax: </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+      <!-- #footer -->
+      <div class="bg">
+        <div class="bg__image">
+          <img src="images/bg/footer-bg.png" alt="" />
         </div>
-      </section>
-      <!-- #tokenomics end -->
-      <!-- #roadmap -->
-      <div class="anchor" id="roadmap">
-      </div>
-      <section class="roadmap" id="roadmap">
-        <div class="autoContainer">
-          <div class="roadmap__inner">
-            <h3 class="title wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">Roadmap</h3>
-            <div class="roadmap__inner-row">
-              <div class="roadmap__inner-item wow fadeInUp" data-wow-duration="1s">
-                <div class="roadmap-title">
-                  <h5>Prelaunch</h5>
-                  <div class="roadmap-title-bg">
-                    <img src="images/shapes/rodamap-title.png" alt="shape" />
-                  </div>
-                </div>
-                <ul>
-                  <li>
-                    Launch NFT Marketplace on zkSync, Arbitrum & Binance Chain
-                    testnets
-                  </li>
-                  <li>
-                    Launch Cross-Chain NFT Marketplace on Arbitrum & Binance
-                    Chain
-                  </li>
-                  <li>Release zkSync Wallet Mobile App on Android & IOS</li>
-                  <li>
-                    Conduct security audits and tests to ensure the protocol's
-                    integrity and robustness
-                  </li>
-                  <li>Airdrop Campaign</li>
-                  <li>Free NFT MInt Campaign</li>
-                </ul>
-              </div>
-              <div class="roadmap__inner-item wow fadeInUp" data-wow-duration="1s">
-                <div class="roadmap-title">
-                  <h5>Launch </h5>
-                  <div class="roadmap-title-bg">
-                    <img src="images/shapes/rodamap-title.png" alt="shape" />
-                  </div>
-                </div>
-                <ul>
-                  <li>
-                    Launch Cross-Chain NFT Marketplace on Arbitrum, Binance
-                    Chain
-                  </li>
-                  <li>
-                    Launch NFT Marketplace on zkSync Era, Arbitrum & Binance
-                    Chain.
-                  </li>
-                  <li>Launch $ZKZ Token</li>
-                  <li>Global Marketing Campaign</li>
-                  <li>CMC & CG Listing</li>
-                  <li>DEX Listing</li>
-                  <li>
-                    Encourage early adoption of the protocol among developers
-                    and users
-                  </li>
-                </ul>
-              </div>
-              <div class="roadmap__inner-item wow fadeInUp" data-wow-duration="1s">
-                <div class="roadmap-title">
-                  <h5>Growth</h5>
-                  <div class="roadmap-title-bg">
-                    <img src="images/shapes/rodamap-title.png" alt="shape" />
-                  </div>
-                </div>
-                <ul>
-                  <li>Top Tier Exchange Listing</li>
-                  <li>Cross chain NFT Marketplace on Ether</li>
-                  <li>Cross chain NFT Marketplace on Polygon</li>
-                  <li>Cross chain NFT Marketplace on Optimism</li>
-                  <li>Release AI NFT Generator app</li>
-                  <li>Release Play2Earn Minigame</li>
-                  <li>Release Text To Image Beta Version</li>
-                  <li>NFT Staking</li>
-                  <li>$ZKZ Staking</li>
-                  <li>Release zkZero Dao</li>
-                  <li>Release zkZero  Swap</li>
-                  <li>Massive marketing campaign</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- #roadmap end -->
-    </div>
-
-    <!-- #footer -->
-    <div class="bg">
-      <div class="bg__image">
-        <img src="images/bg/footer-bg.png" alt="" />
-      </div>
-      <footer class="footer">
-        <div class="autoContainer">
-          <div class="footer__inner">
-            <h2 class="_lg wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">Let's Start</h2>
-            <div class="footer__inner-buttons">
-              <!-- <a class="button button--square wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+        <footer class="footer">
+          <div class="autoContainer">
+            <div class="footer__inner">
+              <h2
+                class="_lg wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay=".5s"
+              >
+                Let's Start
+              </h2>
+              <div class="footer__inner-buttons">
+                <!-- <a class="button button--square wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
                 <span>Buy now</span>
               </a> -->
-              <a href="https://nftzkzerosea.pro/freemint" class="button button--square wow fadeInUp"
-                data-wow-duration="1s" data-wow-delay=".7s">
-                <span>Free NFT</span>
-              </a>
-            </div>
-            <div class="footer__inner-buttons">
-              <a href="https://twitter.com/zkZeroSea" class="button button--square wow fadeInUp" data-wow-duration="1s"
-                data-wow-delay=".6s">
-                <span><i class="icon icon--twitter"></i></span>
-              </a>
-              <a href="https://t.me/ZkZeroSea" class="button button--square wow fadeInUp" data-wow-duration="1s"
-                data-wow-delay=".7s">
-                <span><i class="icon icon--telegram"></i></span>
-              </a>
-              <!-- <a class="button button--square wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
+                <a
+                  href="https://nftzkzerosea.pro/freemint"
+                  class="button button--square wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".7s"
+                >
+                  <span>Free NFT</span>
+                </a>
+              </div>
+              <div class="footer__inner-buttons">
+                <a
+                  href="https://twitter.com/zkZeroSea"
+                  class="button button--square wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".6s"
+                >
+                  <span><i class="icon icon--twitter"></i></span>
+                </a>
+                <a
+                  href="https://t.me/ZkZeroSea"
+                  class="button button--square wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".7s"
+                >
+                  <span><i class="icon icon--telegram"></i></span>
+                </a>
+                <!-- <a class="button button--square wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
                 <span><i class="icon icon--youtube-play"></i></span>
               </a> -->
-              <a href="https://discord.gg/YUBcETkpAT" class="button button--square wow fadeInUp" data-wow-duration="1s"
-                data-wow-delay=".9s">
-                <span><i class="icon icon--reddit-alien"></i></span>
-              </a>
-              <!-- <a href="#" class="button button--square wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                <a
+                  href="https://discord.gg/YUBcETkpAT"
+                  class="button button--square wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".9s"
+                >
+                  <span><i class="icon icon--reddit-alien"></i></span>
+                </a>
+                <!-- <a href="#" class="button button--square wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                 <span><i class="icon icon--book"></i></span>
               </a> -->
-            </div>
-            <div class="logo wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-              <img src="images/logo.png" alt="zksea" />
-            </div>
-            <div class="footer__inner-buttons">
-              <a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" href="#about">About</a>
-              <a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s" href="#utility">Utility</a>
-              <a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s" href="#tokenomics">Tokenomics</a>
-              <a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".9s" href="#roadmap">Roadmap</a>
-              <a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s" href="#whitepaper">WhitePaper</a>
+              </div>
+              <div
+                class="logo wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay=".6s"
+              >
+                <img src="images/logo.png" alt="zksea" />
+              </div>
+              <div class="footer__inner-buttons">
+                <a
+                  class="wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".6s"
+                  href="#about"
+                  >About</a
+                >
+                <a
+                  class="wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".7s"
+                  href="#utility"
+                  >Utility</a
+                >
+                <a
+                  class="wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".8s"
+                  href="#tokenomics"
+                  >Tokenomics</a
+                >
+                <a
+                  class="wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".9s"
+                  href="#roadmap"
+                  >Roadmap</a
+                >
+                <a
+                  class="wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay="1s"
+                  href="#whitepaper"
+                  >WhitePaper</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-      </footer>
+        </footer>
+      </div>
+      <!-- #footer end -->
     </div>
-    <!-- #footer end -->
-  </div>
-  <script src="js/jquery.js"></script>
-  <script src="js/WOW.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+    <script src="js/jquery.js"></script>
+    <script src="js/WOW.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/highlight-nav.js"></script>
+  </body>
 </html>
